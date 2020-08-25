@@ -1,0 +1,97 @@
+// VARIABLES
+
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
+
+$font-heading: "Quicksand", sans-serif;
+$font-subheading: "Karma", serif;
+$font-body: "Maven Pro", sans-serif;
+
+//colors
+$purple: #3a2a8a;
+$lightpink: #ddbdf2;
+$lightpurple: #aa89d9;
+$darkpurple: #09064c;
+
+$primary-clr: $purple;
+$secondary-clr: $lightpink;
+$tertiary-clr: $lightpurple;
+$darkbg-clr: $darkpurple;
+
+$text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+//viewport breakpoints
+$desktop-bp: 1024px;
+$tablet-bp: 1023px;
+$mobile-bp: 480px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  // min-height: 150vh; //debug
+  h1 {
+    font-family: $font-heading;
+    max-width: 75ch;
+  }
+  h2,
+  h3,
+  h4 {
+    font-family: $font-subheading;
+    max-width: 75ch;
+  }
+  p,
+  a {
+    font-family: $font-body;
+    max-width: 75ch;
+  }
+  button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.parent {
+  background: #fcfcfc;
+  height: 100vh;
+
+  // border: 1px solid red; //debug
+}
+.parent.dark {
+  background: $darkbg-clr;
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a {
+    color: #f0f0f0;
+  }
+  // border: 1px solid green; //debug
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid red; //debug
+  .content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    // border: 1px solid green; //debug
+  }
+}

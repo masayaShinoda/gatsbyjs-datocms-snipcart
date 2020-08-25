@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+body h1 {
+  font-family: "Quicksand", sans-serif;
+  max-width: 75ch;
+}
+
+body h2,
+body h3,
+body h4 {
+  font-family: "Karma", serif;
+  max-width: 75ch;
+}
+
+body p,
+body a {
+  font-family: "Maven Pro", sans-serif;
+  max-width: 75ch;
+}
+
+body button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.parent {
+  background: #fcfcfc;
+  height: 100vh;
+}
+
+.parent.dark {
+  background: #09064c;
+}
+
+.parent.dark h1,
+.parent.dark h2,
+.parent.dark h3,
+.parent.dark h4,
+.parent.dark p,
+.parent.dark a {
+  color: #f0f0f0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5vh;
+}
+/*# sourceMappingURL=styles.css.map */
