@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import Nav from "./nav"
 import Styles from "../styles/Header.module.css"
@@ -13,28 +12,24 @@ const goDark = () => {
   parent.classList.toggle("dark")
 }
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className={Styles.Header}>
     <div className={Styles.headerContent}>
       <div className={Styles.logoContainer}>
         <Link to="/">
-          <h1 className={Styles.logoTitle}>{siteTitle}</h1>
+          <p className={Styles.logoTitle}></p>
         </Link>
-        <button onClick={goDark} style={{ color: `white` }}>
-          <FontAwesomeIcon icon={faMoon} style={{ marginLeft: `2.5vmin` }} />
+        <button onClick={goDark}>
+          <FontAwesomeIcon
+            title="Lights on/off"
+            icon={faMoon}
+            style={{ fontSize: `2.5rem`, marginLeft: `2.5vmin` }}
+          />
         </button>
       </div>
       <Nav />
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

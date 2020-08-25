@@ -18,7 +18,6 @@ $darkpurple: #09064c;
 $primary-clr: $purple;
 $secondary-clr: $lightpink;
 $tertiary-clr: $lightpurple;
-$darkbg-clr: $darkpurple;
 
 $text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 
@@ -42,8 +41,15 @@ body {
   line-height: 1.6;
   // min-height: 150vh; //debug
   h1 {
+    font-size: 4.883rem;
     font-family: $font-heading;
     max-width: 75ch;
+  }
+  h2 {
+    font-size: 3.906rem;
+  }
+  h3 {
+    font-size: 3.125rem;
   }
   h2,
   h3,
@@ -64,19 +70,23 @@ body {
 }
 
 .parent {
-  background: #fcfcfc;
+  background: #ffffff;
   height: 100vh;
-
+  a {
+    color: $primary-clr;
+  }
   // border: 1px solid red; //debug
 }
 .parent.dark {
-  background: $darkbg-clr;
+  background: #212121;
   h1,
   h2,
   h3,
   h4,
   p,
-  a {
+  a,
+  i,
+  path {
     color: #f0f0f0;
   }
   // border: 1px solid green; //debug

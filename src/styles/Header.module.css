@@ -2,8 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
 .Header {
-  background: #3a2a8a;
-  color: #f0f0f0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,9 +11,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.75vmin;
-  -webkit-box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.25);
+  padding: 3.25vmin;
+  padding-bottom: 0;
+  -webkit-box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.125);
+          box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.125);
 }
 
 .Header .headerContent {
@@ -25,6 +24,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5vmin 0;
   width: 80vw;
 }
 
@@ -35,10 +38,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .Header .headerContent .logoContainer .logo {
@@ -63,20 +65,6 @@
     width: 8vmax;
     height: 8vmax;
     max-width: 8vmax;
-  }
-}
-
-.Header .headerContent .logoContainer .logoTitle {
-  font-variant: small-caps;
-  color: #f0f0f0;
-  margin: 0;
-  margin-left: 2.5vmin;
-  text-decoration: none;
-}
-
-@media (max-width: 480px) {
-  .Header .headerContent .logoContainer .logoTitle {
-    margin-left: none;
   }
 }
 
@@ -115,21 +103,23 @@
   padding: 0.25vmin 1.1vmax;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  color: #f0f0f0;
   text-decoration: none;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
 
 .Header .headerContent nav ul li a:hover {
-  color: #aa89d9;
+  color: #533dc4;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
 
-.Header .headerContent nav li:last-child a {
-  border-left: 1px solid #f0f0f0;
-  margin-left: 1.1vmax;
+.Header .headerContent nav ul li a:hover i,
+.Header .headerContent nav ul li a:hover path,
+.Header .headerContent nav ul li a:hover p {
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  color: #533dc4;
 }
 
 @media (max-width: 480px) {
@@ -193,8 +183,8 @@
   .Header .headerContent nav .mobileNav div {
     width: 65%;
     height: 6.5%;
-    border-radius: 8%;
-    background: #f0f0f0;
+    border-radius: 20%;
+    background: #3a2a8a;
   }
   .Header .headerContent nav .mobileNav div:nth-of-type(even) {
     margin: 1.25vmax 0;
@@ -209,15 +199,22 @@
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 10;
 }
 
 .mobileOverlay ul {
-  height: 80vmax;
-  margin-top: 20vmax;
+  min-height: 25vmax;
+  margin-top: -15vmax;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,19 +229,35 @@
 }
 
 .mobileOverlay ul li {
+  width: 100vw;
   margin-bottom: 2.5vmax;
+  padding: 0.5vmax 0;
 }
 
 .mobileOverlay ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   color: #f0f0f0;
   text-decoration: none;
   font-size: 2.5rem;
 }
 
-.mobileOverlay ul .exitBtn {
+.mobileOverlay .exitBtn {
   color: #f0f0f0;
   background: none;
   border: 0;
   font-size: 4.25rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2.5vmax;
 }
 /*# sourceMappingURL=Header.module.css.map */

@@ -18,8 +18,17 @@ body {
 }
 
 body h1 {
+  font-size: 4.883rem;
   font-family: "Quicksand", sans-serif;
   max-width: 75ch;
+}
+
+body h2 {
+  font-size: 3.906rem;
+}
+
+body h3 {
+  font-size: 3.125rem;
 }
 
 body h2,
@@ -42,12 +51,16 @@ body button {
 }
 
 .parent {
-  background: #fcfcfc;
+  background: #ffffff;
   height: 100vh;
 }
 
+.parent a {
+  color: #3a2a8a;
+}
+
 .parent.dark {
-  background: #09064c;
+  background: #212121;
 }
 
 .parent.dark h1,
@@ -55,7 +68,9 @@ body button {
 .parent.dark h3,
 .parent.dark h4,
 .parent.dark p,
-.parent.dark a {
+.parent.dark a,
+.parent.dark i,
+.parent.dark path {
   color: #f0f0f0;
 }
 
