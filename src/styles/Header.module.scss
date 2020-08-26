@@ -27,8 +27,8 @@ $tablet-bp: 1023px;
 $mobile-bp: 480px;
 
 .Header {
-  // background: $primary-clr;
   // color: #f0f0f0;
+  background: rgba(240, 240, 240, 0.05); //slightly brighten header
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,6 +176,7 @@ $mobile-bp: 480px;
     // border: 1px solid red; // debug
     li {
       width: 100vw;
+      margin-left: -2.5rem;
       margin-bottom: 2.5vmax;
       padding: 0.5vmax 0;
       // border: 1px solid green; //debug

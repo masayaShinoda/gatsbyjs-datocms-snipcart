@@ -51,8 +51,8 @@ body button {
 }
 
 .parent {
-  background: #ffffff;
-  height: 100vh;
+  background: #fcfcfc;
+  min-height: 100vh;
 }
 
 .parent a {
@@ -60,7 +60,7 @@ body button {
 }
 
 .parent.dark {
-  background: #212121;
+  background: #2b2b2b;
 }
 
 .parent.dark h1,

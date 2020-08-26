@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
 .Header {
+  background: rgba(240, 240, 240, 0.05);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,6 +231,7 @@
 
 .mobileOverlay ul li {
   width: 100vw;
+  margin-left: -2.5rem;
   margin-bottom: 2.5vmax;
   padding: 0.5vmax 0;
 }
