@@ -1,3 +1,13 @@
+@import "_variables.scss";
+
 .productContainer {
-  border: 1px solid red; //debug
+  border: 1px solid $primary-clr; //debug
+  .upperSection {
+    border: 1px solid;
+  }
+  .lowerSection {
+    .productModel {
+      font-size: 1.45em;
+    }
+  }
 }

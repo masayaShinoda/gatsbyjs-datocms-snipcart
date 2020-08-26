@@ -1,4 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
 .productContainer {
-  border: 1px solid red;
+  border: 1px solid #3a2a8a;
+}
+
+.productContainer .upperSection {
+  border: 1px solid;
+}
+
+.productContainer .lowerSection .productModel {
+  font-size: 1.45em;
 }
 /*# sourceMappingURL=Product.module.css.map */

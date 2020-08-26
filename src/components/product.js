@@ -6,12 +6,12 @@ import Styles from "../styles/Product.module.css"
 const Product = props => {
   return (
     <div className={Styles.productContainer}>
-      <section>
+      <section className={Styles.upperSection}>
         <img src={props.imagesUrl} alt={props.imagesAlt}></img>
       </section>
-      <section>
+      <section className={Styles.lowerSection}>
         <div>
-          <h1>{props.productModel}</h1>
+          <h1 className={Styles.productModel}>{props.productModel}</h1>
           <p>{props.brand}</p>
           <h2>${props.price}</h2>
         </div>
