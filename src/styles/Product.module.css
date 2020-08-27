@@ -25,17 +25,20 @@
 }
 
 .productContainer .lowerSection .productModel,
-.productContainer .lowerSection .productBrand {
+.productContainer .lowerSection .productBrand,
+.productContainer .lowerSection .productPrice {
   margin: 0;
-  margin-bottom: 0.5em;
 }
 
 .productContainer .lowerSection .productModel {
   font-size: 1.25em;
+  border-bottom: #3a2a8a 2px solid;
+  padding-bottom: 0.25em;
 }
 
 .productContainer .lowerSection .productBrand {
   font-size: 0.9em;
+  margin-bottom: 0.5em;
 }
 
 .productContainer .lowerSection .productPrice {
@@ -65,13 +68,13 @@
     font-size: 1.1em;
   }
   .productContainer:nth-of-type(even) {
-    margin: 0 1.25vmax;
+    margin: 0 1.75vmax;
   }
   .productContainer:nth-of-type(3n + 1) {
     margin: 0;
   }
   .productContainer:nth-of-type(n) {
-    margin-bottom: 1.25vmax;
+    margin-bottom: 1.75vmax;
   }
 }
 

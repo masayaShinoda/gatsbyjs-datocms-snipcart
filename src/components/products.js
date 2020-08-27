@@ -27,7 +27,7 @@ const Products = () => {
   `)
 
   return (
-    <div className={Styles.ProductListing}>
+    <div id="ProductListing" className={Styles.ProductListing}>
       {footwearProductData.allDatoCmsProduct.nodes.map(node => {
         var count = -1
         const imageCount = ++count

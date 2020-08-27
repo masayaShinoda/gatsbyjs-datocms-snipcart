@@ -1,5 +1,5 @@
 @import "_variables.scss";
-
+@import "_stylesDark.scss";
 * {
   margin: 0;
   padding: 0;
@@ -66,26 +66,6 @@ body {
     color: $primary-clr;
   }
   // border: 1px solid red; //debug
-}
-.parent.dark {
-  background: #2b2b2b;
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  a,
-  i,
-  path {
-    color: #f0f0f0;
-  }
-  #mobileNav {
-    // border: 1px solid blue; //debug
-    div {
-      background: #f0f0f0;
-    }
-  }
-  // border: 1px solid green; //debug
 }
 
 main {

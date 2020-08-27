@@ -1,6 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
+.parent.dark {
+  background: #2b2b2b;
+}
+
+.parent.dark h1,
+.parent.dark h2,
+.parent.dark h3,
+.parent.dark h4,
+.parent.dark p,
+.parent.dark a,
+.parent.dark i,
+.parent.dark path {
+  color: #fcfcfc;
+}
+
+.parent.dark #mobileNav div {
+  background: #fcfcfc;
+}
+
+.parent.dark #ProductListing div section:nth-of-type(2) h1 {
+  border-bottom: #988bdc 2px solid;
+}
+
 .Header {
   background: rgba(240, 240, 240, 0.05);
   display: -webkit-box;
@@ -253,13 +279,13 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  color: #f0f0f0;
+  color: #fcfcfc;
   text-decoration: none;
   font-size: 2.5rem;
 }
 
 .mobileOverlay .exitBtn {
-  color: #f0f0f0;
+  color: #fcfcfc;
   background: none;
   border: 0;
   font-size: 4.25rem;

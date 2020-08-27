@@ -24,15 +24,18 @@
     padding: 0.8em 1.1em;
     // border: 1px solid blue; //debug
     .productModel,
-    .productBrand {
+    .productBrand,
+    .productPrice {
       margin: 0; //reset margin inherited from global styles
-      margin-bottom: 0.5em;
     }
     .productModel {
       font-size: 1.25em;
+      border-bottom: $primary-clr 2px solid;
+      padding-bottom: 0.25em;
     }
     .productBrand {
       font-size: 0.9em;
+      margin-bottom: 0.5em;
     }
     .productPrice {
       font-size: 1.25em;
@@ -66,14 +69,14 @@
     }
   }
   .productContainer:nth-of-type(even) {
-    margin: 0 1.25vmax;
+    margin: 0 1.75vmax;
   }
   .productContainer:nth-of-type(3n + 1) {
     margin: 0;
     // border: 1px solid red; //debug
   }
   .productContainer:nth-of-type(n) {
-    margin-bottom: 1.25vmax;
+    margin-bottom: 1.75vmax;
   }
 }
 

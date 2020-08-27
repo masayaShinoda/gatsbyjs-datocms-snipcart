@@ -66,11 +66,17 @@ const handleMobileNav = () => {
   const MobileOverlay = document.getElementById("mobileOverlay")
   MobileOverlay.style.height = `100%`
   MobileOverlay.style.display = `flex`
+  document.getElementById("parent").style.height = "100vh";
+  document.getElementById("parent").style.overflow = "hidden";
+  
 }
 const exitMobileNav = () => {
   const MobileOverlay = document.getElementById("mobileOverlay")
   MobileOverlay.style.height = `0`
   MobileOverlay.style.display = `none`
+  document.getElementById("parent").style.height = "auto";
+  document.getElementById("parent").style.overflow = "visible";
+
 }
 
 const Nav = () => {
