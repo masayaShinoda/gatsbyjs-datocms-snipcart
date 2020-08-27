@@ -35,16 +35,32 @@ body {
   a {
     font-family: $font-body;
     max-width: 75ch;
+    font-size: 1.6rem;
   }
   button {
     background: none;
     border: 0;
     cursor: pointer;
   }
+  @media (max-width: $tablet-bp) {
+    h1 {
+      font-size: 4.272rem;
+    }
+    h2 {
+      font-size: 3.418rem;
+    }
+    h3 {
+      font-size: 2.734rem;
+    }
+    p,
+    a {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 .parent {
-  background: #fcfcfc;
+  background: hsl(0, 0%, 95%);
   min-height: 100vh;
   a {
     color: $primary-clr;
@@ -63,6 +79,12 @@ body {
   path {
     color: #f0f0f0;
   }
+  #mobileNav {
+    // border: 1px solid blue; //debug
+    div {
+      background: #f0f0f0;
+    }
+  }
   // border: 1px solid green; //debug
 }
 
@@ -77,5 +99,10 @@ main {
     flex-direction: column;
     margin-top: 5vh;
     // border: 1px solid green; //debug
+  }
+  @media (max-width: $mobile-bp) {
+    .content {
+      width: 92%;
+    }
   }
 }

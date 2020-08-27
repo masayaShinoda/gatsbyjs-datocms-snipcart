@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Product from "./product"
-import "../styles/styles.css"
+import Styles from "../styles/ProductListing.module.css"
 
 const Products = () => {
   //is the component for products listing
@@ -26,10 +26,10 @@ const Products = () => {
   let count = 0
 
   return (
-    <div>
+    <div className={Styles.ProductListing}>
       {productData.allDatoCmsProduct.nodes.map(node => {
         const imageCount = count + 1
-        console.log(node.images[imageCount].alt)
+        // console.log(node.images[imageCount].alt)
         return (
           <Product
             imagesUrl={node.images[imageCount].url}

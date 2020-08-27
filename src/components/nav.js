@@ -84,6 +84,7 @@ const Nav = () => {
           onClick={handleMobileNav}
           onKeyDown={handleMobileNav}
           className={Styles.mobileNav}
+          id="mobileNav"
         >
           <div></div>
           <div></div>

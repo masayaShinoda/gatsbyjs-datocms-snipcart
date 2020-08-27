@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACIA,OAAO,CAAC,+FAAI;AACZ,OAAO,CAAC,mFAAI;AACZ,OAAO,CAAC,uFAAI;ADFZ,AAAA,eAAe,CAAC;EACd,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;CAChB",
+    "sources": [
+        "ProductListing.module.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "ProductListing.module.css"
+}

@@ -1,13 +1,86 @@
 @import "_variables.scss";
 
+//styling for individual product cards
 .productContainer {
-  border: 1px solid $primary-clr; //debug
+  width: 20vmax;
+  background: rgba(
+    250,
+    250,
+    250,
+    0.075
+  ); //brighten product card to set apart from bg
+  box-shadow: 1vmin 1vmin 2.5vmax rgba(50, 50, 50, 0.125);
+  // border: 1px solid red; //debug
   .upperSection {
-    border: 1px solid;
+    height: 20vmax;
+    overflow: hidden;
+    // border: 1px solid green; //debug
+    .gallery {
+      object-fit: cover;
+    }
   }
   .lowerSection {
+    min-height: 30%;
+    padding: 1.1em;
+    // border: 1px solid blue; //debug
+    .productModel,
+    .productBrand,
+    .productPrice {
+      margin: 0; //reset margin inherited from global styles
+      margin-bottom: 0.5em;
+    }
     .productModel {
       font-size: 1.45em;
     }
+    .productBrand {
+      font-size: 1.1em;
+    }
+    .productPrice {
+      font-size: 1.45em;
+    }
+  }
+}
+.productContainer:nth-of-type(even) {
+  margin: 0 2.5vmax;
+}
+
+@media (max-width: $tablet-bp) {
+  .productContainer {
+    width: 25vw;
+    // border: 1px solid green; //debug
+    // height: fit-content;
+    .upperSection {
+      height: 25vw;
+    }
+    .lowerSection {
+      // border: 1px solid blue; //debug
+      .productModel {
+        font-size: 1.25em;
+      }
+      .productBrand {
+        font-size: 0.9em;
+      }
+      .productPrice {
+        font-size: 1.25em;
+      }
+    }
+  }
+  .productContainer:nth-of-type(even) {
+    margin: 0 2.5vmax;
+  }
+}
+
+@media (max-width: $mobile-bp) {
+  .productContainer {
+    width: 45vw;
+
+    // border: 1px solid blue; //debug
+    .upperSection {
+      height: 45vw;
+    }
+  }
+  .productContainer:nth-of-type(even) {
+    margin: 0;
+    margin-left: 1.25vw;
   }
 }
