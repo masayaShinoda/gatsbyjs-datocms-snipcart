@@ -69,14 +69,13 @@
 
 @media (max-width: 480px) {
   .productContainer {
-    width: 45vw;
+    width: 42.25vw;
   }
   .productContainer .upperSection {
-    height: 45vw;
+    height: 42.5vw;
   }
   .productContainer:nth-of-type(even) {
     margin: 0;
-    margin-left: 1.25vw;
   }
 }
 /*# sourceMappingURL=Product.module.css.map */

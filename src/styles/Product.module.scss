@@ -72,15 +72,14 @@
 
 @media (max-width: $mobile-bp) {
   .productContainer {
-    width: 45vw;
+    width: 42.25vw;
 
     // border: 1px solid blue; //debug
     .upperSection {
-      height: 45vw;
+      height: 42.5vw;
     }
   }
   .productContainer:nth-of-type(even) {
     margin: 0;
-    margin-left: 1.25vw;
   }
 }

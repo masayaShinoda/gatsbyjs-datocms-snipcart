@@ -10,6 +10,8 @@
 
 @media (max-width: $mobile-bp) {
   .ProductListing {
-    // border: 1px solid red; //debug
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid red; //debug
   }
 }

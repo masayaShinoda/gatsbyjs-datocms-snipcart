@@ -12,4 +12,14 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
+@media (max-width: 480px) {
+  .ProductListing {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    border: 1px solid red;
+  }
+}
 /*# sourceMappingURL=ProductListing.module.css.map */
