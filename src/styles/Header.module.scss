@@ -80,6 +80,15 @@
   }
 }
 
+@media (max-width: $tablet-bp) {
+  .Header {
+    .headerContent {
+      width: 90vw;
+      // border: 1px solid red; //debug
+    }
+  }
+}
+
 @media (max-width: $mobile-bp) {
   .Header {
     // border: 1px solid red; //debug

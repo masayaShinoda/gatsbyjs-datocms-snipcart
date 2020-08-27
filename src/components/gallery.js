@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const Gallery = () => {
   const galleryData = useStaticQuery(graphql`
     query galleryData {
-      allDatoCmsProduct {
+      allDatoCmsProduct(filter: { productType: { eq: "Footwear" } }) {
         nodes {
           images {
             url
@@ -14,18 +14,30 @@ const Gallery = () => {
       }
     }
   `)
-  const galleryArray = galleryData.allDatoCmsProduct.nodes
-  galleryArray.forEach(item => {
-    let key = "url"
-    console.log(item)
-    const productGallery = item
+  // productType
+  // productModel
+  // brand
+  // colorS
+  // sizes
+  // price
+  // images {
+  //   url
+  //   alt
+  // }
+  // id
 
-    // const imgagesArray = item.images
-    // // console.log(imgagesArray)
-    // imgagesArray.forEach(image => {
-    //   console.log(image[key])
-    // })
-  })
+  // const galleryArray = galleryData.allDatoCmsProduct.nodes
+  // galleryArray.forEach(item => {
+  //   let key = "url"
+  //   console.log(item)
+  //   const productGallery = item
+
+  //   // const imgagesArray = item.images
+  //   // // console.log(imgagesArray)
+  //   // imgagesArray.forEach(image => {
+  //   //   console.log(image[key])
+  //   // })
+  // })
 
   return (
     <div>

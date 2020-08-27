@@ -6,12 +6,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  // border: 1px solid red; //debug
 }
 
 @media (max-width: $mobile-bp) {
   .ProductListing {
     justify-content: space-between;
     width: 100%;
-    border: 1px solid red; //debug
+    // border: 1px solid green; //debug
   }
 }

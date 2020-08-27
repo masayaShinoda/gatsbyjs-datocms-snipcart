@@ -95,14 +95,22 @@ main {
   // border: 1px solid red; //debug
   .content {
     width: 80%;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     margin-top: 5vh;
     // border: 1px solid green; //debug
   }
+
+  @media (max-width: $tablet-bp) {
+    .content {
+      width: 90%;
+    }
+  }
   @media (max-width: $mobile-bp) {
     .content {
       width: 92%;
+      max-width: 92%;
     }
   }
 }

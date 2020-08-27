@@ -6,34 +6,40 @@ import Styles from "../styles/ProductListing.module.css"
 const Products = () => {
   //is the component for products listing
 
-  const productData = useStaticQuery(graphql`
-    query productData {
-      allDatoCmsProduct {
+  const footwearProductData = useStaticQuery(graphql`
+    query footwearProductData {
+      allDatoCmsProduct(filter: { productType: { eq: "Footwear" } }) {
         nodes {
+          productType
           productModel
           brand
           colorS
+          sizes
           price
           images {
             url
             alt
           }
+          id
         }
       }
     }
   `)
 
-  let count = 0
-
   return (
     <div className={Styles.ProductListing}>
-      {productData.allDatoCmsProduct.nodes.map(node => {
-        const imageCount = count + 1
-        // console.log(node.images[imageCount].alt)
+      {footwearProductData.allDatoCmsProduct.nodes.map(node => {
+        var count = -1
+        const imageCount = ++count
+        const urlKey = "url"
+        const altKey = "alt"
+        // console.log(node.images)
+        const imagesArray = node.images
+        imagesArray.forEach(image => console.log(image))
+        // console.log(node.images[imageCount][urlKey])
+        // console.log(node.images[imageCount][altKey])
         return (
           <Product
-            imagesUrl={node.images[imageCount].url}
-            imagesAlt={node.images[imageCount].alt}
             productModel={node.productModel}
             brand={node.brand}
             price={node.price}

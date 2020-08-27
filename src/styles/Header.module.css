@@ -123,6 +123,12 @@
   color: #533dc4;
 }
 
+@media (max-width: 1023px) {
+  .Header .headerContent {
+    width: 90vw;
+  }
+}
+
 @media (max-width: 480px) {
   .Header {
     -webkit-box-orient: vertical;

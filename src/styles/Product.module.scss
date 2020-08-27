@@ -2,7 +2,7 @@
 
 //styling for individual product cards
 .productContainer {
-  width: 20vmax;
+  flex-basis: 17.5vmax;
   background: rgba(
     250,
     250,
@@ -12,7 +12,7 @@
   box-shadow: 1vmin 1vmin 2.5vmax rgba(50, 50, 50, 0.125);
   // border: 1px solid red; //debug
   .upperSection {
-    height: 20vmax;
+    height: 17.5vmax;
     overflow: hidden;
     // border: 1px solid green; //debug
     .gallery {
@@ -21,32 +21,32 @@
   }
   .lowerSection {
     min-height: 30%;
-    padding: 1.1em;
+    padding: 0.8em 1.1em;
     // border: 1px solid blue; //debug
     .productModel,
-    .productBrand,
-    .productPrice {
+    .productBrand {
       margin: 0; //reset margin inherited from global styles
       margin-bottom: 0.5em;
     }
     .productModel {
-      font-size: 1.45em;
+      font-size: 1.25em;
     }
     .productBrand {
-      font-size: 1.1em;
+      font-size: 0.9em;
     }
     .productPrice {
-      font-size: 1.45em;
+      font-size: 1.25em;
+      margin-bottom: 0;
     }
   }
 }
 .productContainer:nth-of-type(even) {
-  margin: 0 2.5vmax;
+  margin: 0 1.25vmax;
 }
 
 @media (max-width: $tablet-bp) {
   .productContainer {
-    width: 25vw;
+    flex-basis: 25vw;
     // border: 1px solid green; //debug
     // height: fit-content;
     .upperSection {
@@ -55,31 +55,38 @@
     .lowerSection {
       // border: 1px solid blue; //debug
       .productModel {
-        font-size: 1.25em;
+        font-size: 1.1em;
       }
       .productBrand {
-        font-size: 0.9em;
+        font-size: 0.8em;
       }
       .productPrice {
-        font-size: 1.25em;
+        font-size: 1.1em;
       }
     }
   }
   .productContainer:nth-of-type(even) {
-    margin: 0 2.5vmax;
+    margin: 0 1.25vmax;
+  }
+  .productContainer:nth-of-type(3n + 1) {
+    margin: 0;
+    // border: 1px solid red; //debug
+  }
+  .productContainer:nth-of-type(n) {
+    margin-bottom: 1.25vmax;
   }
 }
 
 @media (max-width: $mobile-bp) {
-  .productContainer {
-    width: 42.25vw;
-
+  .productContainer:nth-of-type(even) {
+    margin: 0; //cancels out property above
+  }
+  .productContainer:nth-of-type(n) {
+    flex-basis: 45vw;
+    margin-bottom: 1.25vmax;
     // border: 1px solid blue; //debug
     .upperSection {
-      height: 42.5vw;
+      height: 45vw;
     }
-  }
-  .productContainer:nth-of-type(even) {
-    margin: 0;
   }
 }

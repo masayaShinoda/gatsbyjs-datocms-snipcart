@@ -2,14 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
 .productContainer {
-  width: 20vmax;
+  -ms-flex-preferred-size: 17.5vmax;
+      flex-basis: 17.5vmax;
   background: rgba(250, 250, 250, 0.075);
   -webkit-box-shadow: 1vmin 1vmin 2.5vmax rgba(50, 50, 50, 0.125);
           box-shadow: 1vmin 1vmin 2.5vmax rgba(50, 50, 50, 0.125);
 }
 
 .productContainer .upperSection {
-  height: 20vmax;
+  height: 17.5vmax;
   overflow: hidden;
 }
 
@@ -20,62 +21,71 @@
 
 .productContainer .lowerSection {
   min-height: 30%;
-  padding: 1.1em;
+  padding: 0.8em 1.1em;
 }
 
 .productContainer .lowerSection .productModel,
-.productContainer .lowerSection .productBrand,
-.productContainer .lowerSection .productPrice {
+.productContainer .lowerSection .productBrand {
   margin: 0;
   margin-bottom: 0.5em;
 }
 
 .productContainer .lowerSection .productModel {
-  font-size: 1.45em;
+  font-size: 1.25em;
 }
 
 .productContainer .lowerSection .productBrand {
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .productContainer .lowerSection .productPrice {
-  font-size: 1.45em;
+  font-size: 1.25em;
+  margin-bottom: 0;
 }
 
 .productContainer:nth-of-type(even) {
-  margin: 0 2.5vmax;
+  margin: 0 1.25vmax;
 }
 
 @media (max-width: 1023px) {
   .productContainer {
-    width: 25vw;
+    -ms-flex-preferred-size: 25vw;
+        flex-basis: 25vw;
   }
   .productContainer .upperSection {
     height: 25vw;
   }
   .productContainer .lowerSection .productModel {
-    font-size: 1.25em;
+    font-size: 1.1em;
   }
   .productContainer .lowerSection .productBrand {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .productContainer .lowerSection .productPrice {
-    font-size: 1.25em;
+    font-size: 1.1em;
   }
   .productContainer:nth-of-type(even) {
-    margin: 0 2.5vmax;
+    margin: 0 1.25vmax;
+  }
+  .productContainer:nth-of-type(3n + 1) {
+    margin: 0;
+  }
+  .productContainer:nth-of-type(n) {
+    margin-bottom: 1.25vmax;
   }
 }
 
 @media (max-width: 480px) {
-  .productContainer {
-    width: 42.25vw;
-  }
-  .productContainer .upperSection {
-    height: 42.5vw;
-  }
   .productContainer:nth-of-type(even) {
     margin: 0;
+  }
+  .productContainer:nth-of-type(n) {
+    -ms-flex-preferred-size: 45vw;
+        flex-basis: 45vw;
+    margin-bottom: 1.25vmax;
+  }
+  .productContainer:nth-of-type(n) .upperSection {
+    height: 45vw;
   }
 }
 /*# sourceMappingURL=Product.module.css.map */

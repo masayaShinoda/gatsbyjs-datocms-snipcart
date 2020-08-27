@@ -110,6 +110,7 @@ main {
 
 main .content {
   width: 80%;
+  max-width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,9 +121,16 @@ main .content {
   margin-top: 5vh;
 }
 
+@media (max-width: 1023px) {
+  main .content {
+    width: 90%;
+  }
+}
+
 @media (max-width: 480px) {
   main .content {
     width: 92%;
+    max-width: 92%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
