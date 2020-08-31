@@ -1,0 +1,30 @@
+@import "_variables.scss";
+
+@media (max-width: $desktop-bp) {
+  .mobileNav {
+    display: none;
+  }
+}
+@media (max-width: $mobile-bp) {
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7.5vmax;
+    width: 7.5vmax;
+    margin-right: 2.5vmax;
+    // background: none;
+    border: 0;
+    // border: 1px solid blue; //debug
+    div {
+      width: 65%;
+      height: 6.5%;
+      border-radius: 20%;
+      background: $primary-clr;
+    }
+    div:nth-of-type(even) {
+      margin: 1.25vmax 0;
+    }
+  }
+}

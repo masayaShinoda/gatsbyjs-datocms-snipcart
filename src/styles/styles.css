@@ -19,7 +19,7 @@
   color: #fcfcfc;
 }
 
-.parent.dark #mobileNav span {
+.parent.dark #mobileNav div {
   background: #988bdc !important;
 }
 

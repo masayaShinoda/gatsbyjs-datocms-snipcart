@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
+@media (max-width: 1024px) {
+  .mobileNav {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobileNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 7.5vmax;
+    width: 7.5vmax;
+    margin-right: 2.5vmax;
+    border: 0;
+  }
+  .mobileNav div {
+    width: 65%;
+    height: 6.5%;
+    border-radius: 20%;
+    background: #3a2a8a;
+  }
+  .mobileNav div:nth-of-type(even) {
+    margin: 1.25vmax 0;
+  }
+}
+/*# sourceMappingURL=MobileNav.module.css.map */

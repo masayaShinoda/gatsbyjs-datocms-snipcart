@@ -11,6 +11,7 @@ import {
 
 //styles import
 import Styles from "../styles/Header.module.css"
+import mobileNavStyles from "../styles/MobileNav.module.css"
 
 const NavList = () => {
   return (
@@ -90,12 +91,12 @@ const Nav = () => {
         <button
           onClick={handleMobileNav}
           onKeyDown={handleMobileNav}
-          className={Styles.mobileNav}
+          className={mobileNavStyles.mobileNav}
           id="mobileNav"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <div></div>
+          <div></div>
+          <div></div>
         </button>
       </nav>
     </div>
