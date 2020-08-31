@@ -1,6 +1,5 @@
 @import "_variables.scss";
 
-$dark-primary-clr: lighten($primary-clr, 35%);
 $secondary-clr: $lightpink;
 $tertiary-clr: $lightpurple;
 
@@ -15,12 +14,6 @@ $tertiary-clr: $lightpurple;
   i,
   path {
     color: #fcfcfc;
-  }
-  #mobileNav {
-    // border: 1px solid blue; //debug
-    div {
-      background: $dark-primary-clr;
-    }
   }
   #ProductListing {
     div {
