@@ -18,7 +18,7 @@ const NavList = () => {
       <li>
         <Link to="/">
           <FontAwesomeIcon
-            size="sm"
+            size="xs"
             icon={faArrowCircleRight}
             style={{ marginRight: `.5em` }}
           />
@@ -29,7 +29,7 @@ const NavList = () => {
         <Link to="/">
           {" "}
           <FontAwesomeIcon
-            size="sm"
+            size="xs"
             icon={faShoppingCart}
             style={{ marginRight: `.5em` }}
           />
@@ -39,7 +39,7 @@ const NavList = () => {
       <li>
         <Link to="/">
           <FontAwesomeIcon
-            size="sm"
+            size="xs"
             icon={faInfoCircle}
             style={{ marginRight: `.5em` }}
           />
@@ -59,7 +59,7 @@ const MobileOverlay = () => {
         onKeyDown={exitMobileNav}
         className={Styles.exitBtn}
       >
-        <FontAwesomeIcon size="sm" icon={faTimes} />
+        <FontAwesomeIcon size="xs" icon={faTimes} />
       </button>
     </div>
   )
@@ -92,7 +92,7 @@ const Nav = () => {
           onKeyDown={handleMobileNav}
           className={Styles.mobileNav}
           id="mobileNav"
-          style={{ background: `red` }}
+          // style={{ background: `red` }}
         >
           <div></div>
           <div></div>

@@ -108,7 +108,7 @@ class Header extends React.Component {
               }
             >
               <FontAwesomeIcon
-                size="sm"
+                size="xs"
                 title="Lights on/off"
                 icon={faMoon}
                 style={{ fontSize: `2.5rem`, marginLeft: `2.5vmin` }}
