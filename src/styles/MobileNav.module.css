@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
-@media (max-width: 1024px) {
-  .mobileNav {
-    display: none;
-  }
-}
-
 @media (max-width: 480px) {
   .mobileNav {
     display: -webkit-box;
@@ -35,6 +29,12 @@
   }
   .mobileNav div:nth-of-type(even) {
     margin: 1.25vmax 0;
+  }
+}
+
+@media (width: 1024px) {
+  .mobileNav {
+    display: none;
   }
 }
 /*# sourceMappingURL=MobileNav.module.css.map */
