@@ -18,6 +18,7 @@ const NavList = () => {
       <li>
         <Link to="/">
           <FontAwesomeIcon
+            size="1x"
             icon={faArrowCircleRight}
             style={{ marginRight: `.5em` }}
           />
@@ -28,6 +29,7 @@ const NavList = () => {
         <Link to="/">
           {" "}
           <FontAwesomeIcon
+            size="1x"
             icon={faShoppingCart}
             style={{ marginRight: `.5em` }}
           />
@@ -37,6 +39,7 @@ const NavList = () => {
       <li>
         <Link to="/">
           <FontAwesomeIcon
+            size="1x"
             icon={faInfoCircle}
             style={{ marginRight: `.5em` }}
           />
@@ -56,7 +59,7 @@ const MobileOverlay = () => {
         onKeyDown={exitMobileNav}
         className={Styles.exitBtn}
       >
-        <FontAwesomeIcon icon={faTimes} />
+        <FontAwesomeIcon size="1x" icon={faTimes} />
       </button>
     </div>
   )
@@ -66,17 +69,15 @@ const handleMobileNav = () => {
   const MobileOverlay = document.getElementById("mobileOverlay")
   MobileOverlay.style.height = `100%`
   MobileOverlay.style.display = `flex`
-  document.getElementById("parent").style.height = "100vh";
-  document.getElementById("parent").style.overflow = "hidden";
-  
+  document.getElementById("parent").style.height = "100vh"
+  document.getElementById("parent").style.overflow = "hidden"
 }
 const exitMobileNav = () => {
   const MobileOverlay = document.getElementById("mobileOverlay")
   MobileOverlay.style.height = `0`
   MobileOverlay.style.display = `none`
-  document.getElementById("parent").style.height = "auto";
-  document.getElementById("parent").style.overflow = "visible";
-
+  document.getElementById("parent").style.height = "auto"
+  document.getElementById("parent").style.overflow = "visible"
 }
 
 const Nav = () => {
