@@ -22,8 +22,8 @@
     border: 0;
   }
   .mobileNav div {
-    width: 65%;
-    height: 6.5%;
+    width: 4.875vmax;
+    height: 0.4875vmax;
     border-radius: 20%;
     background: #3a2a8a;
   }
