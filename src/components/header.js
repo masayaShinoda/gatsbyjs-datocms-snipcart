@@ -17,37 +17,6 @@ class Header extends React.Component {
     this.goLight = this.goLight.bind(this)
   }
 
-  // goDark() {
-  //   const parent = document.getElementById("parent")
-  //   // console.log(this.state.darkMode)
-  //   if (this.state.darkMode === false) {
-  //     parent.classList.toggle("dark")
-  //     this.setState(() => {
-  //       return {
-  //         darkMode: true,
-  //       }
-  //     })
-  //     var mode = true
-  //     console.log("before click its light")
-  //   }
-  //   if (this.state.darkMode === true) {
-  //     parent.classList.toggle("dark")
-  //     this.setState(() => {
-  //       return {
-  //         darkMode: false,
-  //       }
-  //     })
-  //     var mode = false
-  //     console.log("before click its dark")
-  //   }
-
-  //   // var mode = this.state.darkMode
-  //   localStorage.setItem("mode", JSON.stringify(mode))
-  //   console.log(
-  //     "the value being stored is " + JSON.parse(localStorage.getItem("mode"))
-  //   )
-  // }
-
   goDark() {
     const parent = document.getElementById("parent")
     parent.classList.add("dark")
@@ -108,10 +77,14 @@ class Header extends React.Component {
               }
             >
               <FontAwesomeIcon
-                size="xs"
+                size="1x"
                 title="Lights on/off"
                 icon={faMoon}
-                style={{ fontSize: `2.5rem`, marginLeft: `2.5vmin` }}
+                style={{
+                  fontSize: `2.5rem`,
+                  maxWidth: `2.5rem`,
+                  marginLeft: `2.5vmin`,
+                }}
               />
             </button>
           </div>

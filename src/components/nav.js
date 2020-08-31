@@ -19,9 +19,9 @@ const NavList = () => {
       <li>
         <Link to="/">
           <FontAwesomeIcon
-            size="xs"
+            size="1x"
             icon={faArrowCircleRight}
-            style={{ marginRight: `.5em` }}
+            style={{ marginRight: `.5em`, maxWidth: `2.5rem` }}
           />
           Sign In
         </Link>
@@ -30,9 +30,9 @@ const NavList = () => {
         <Link to="/">
           {" "}
           <FontAwesomeIcon
-            size="xs"
+            size="1x"
             icon={faShoppingCart}
-            style={{ marginRight: `.5em` }}
+            style={{ marginRight: `.5em`, maxWidth: `2.5rem` }}
           />
           Cart
         </Link>
@@ -40,9 +40,9 @@ const NavList = () => {
       <li>
         <Link to="/">
           <FontAwesomeIcon
-            size="xs"
+            size="1x"
             icon={faInfoCircle}
-            style={{ marginRight: `.5em` }}
+            style={{ marginRight: `.5em`, maxWidth: `2.5rem` }}
           />
           About
         </Link>
@@ -60,7 +60,7 @@ const MobileOverlay = () => {
         onKeyDown={exitMobileNav}
         className={Styles.exitBtn}
       >
-        <FontAwesomeIcon size="xs" icon={faTimes} />
+        <FontAwesomeIcon size="1x" icon={faTimes} />
       </button>
     </div>
   )
