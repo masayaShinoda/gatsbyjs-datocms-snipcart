@@ -107,8 +107,10 @@
       flex-wrap: wrap;
 }
 
-.Header .headerContent nav .mobileNav {
-  display: none;
+@media (max-width: 1024px) {
+  .Header .headerContent nav .mobileNav {
+    display: none;
+  }
 }
 
 .Header .headerContent nav ul {

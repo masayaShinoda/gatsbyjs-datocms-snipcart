@@ -47,8 +47,10 @@
       margin: 0;
       flex-wrap: wrap;
       // border: 1px solid red; //debug
-      .mobileNav {
-        display: none;
+      @media (max-width: $desktop-bp) {
+        .mobileNav {
+          display: none;
+        }
       }
       ul {
         display: flex;
