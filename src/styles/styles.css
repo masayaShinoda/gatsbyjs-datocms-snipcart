@@ -19,8 +19,8 @@
   color: #fcfcfc;
 }
 
-.parent.dark #mobileNav div {
-  background: #988bdc;
+.parent.dark #mobileNav span {
+  background: #988bdc !important;
 }
 
 .parent.dark #ProductListing div section:nth-of-type(2) h1 {

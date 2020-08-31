@@ -19,8 +19,8 @@
   color: #fcfcfc;
 }
 
-.parent.dark #mobileNav div {
-  background: #988bdc;
+.parent.dark #mobileNav span {
+  background: #988bdc !important;
 }
 
 .parent.dark #ProductListing div section:nth-of-type(2) h1 {
@@ -214,13 +214,13 @@
     margin-right: 2.5vmax;
     border: 0;
   }
-  .Header .headerContent nav .mobileNav div {
+  .Header .headerContent nav .mobileNav span {
     width: 65%;
     height: 6.5%;
     border-radius: 20%;
-    background: #3a2a8a;
+    background: #3a2a8a !important;
   }
-  .Header .headerContent nav .mobileNav div:nth-of-type(even) {
+  .Header .headerContent nav .mobileNav span:nth-of-type(even) {
     margin: 1.25vmax 0;
   }
 }

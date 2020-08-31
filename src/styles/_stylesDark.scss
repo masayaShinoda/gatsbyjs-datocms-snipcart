@@ -17,9 +17,9 @@ $tertiary-clr: $lightpurple;
     color: #fcfcfc;
   }
   #mobileNav {
-    div {
+    span {
       //coloring from burger nav
-      background: $dark-primary-clr;
+      background: $dark-primary-clr !important;
       // border: 1px solid red; //debug
     }
   }
