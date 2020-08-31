@@ -1,5 +1,6 @@
 @import "_variables.scss";
 
+$dark-primary-clr: lighten($primary-clr, 35%);
 $secondary-clr: $lightpink;
 $tertiary-clr: $lightpurple;
 
@@ -15,6 +16,14 @@ $tertiary-clr: $lightpurple;
   path {
     color: #fcfcfc;
   }
+  #mobileNav {
+    div {
+      //coloring from burger nav
+      background: $dark-primary-clr;
+      // border: 1px solid red; //debug
+    }
+  }
+
   #ProductListing {
     div {
       section:nth-of-type(2) {
