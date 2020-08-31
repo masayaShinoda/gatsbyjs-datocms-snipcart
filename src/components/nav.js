@@ -92,6 +92,7 @@ const Nav = () => {
           onKeyDown={handleMobileNav}
           className={Styles.mobileNav}
           id="mobileNav"
+          style={{ background: `red` }}
         >
           <div></div>
           <div></div>
