@@ -46,9 +46,9 @@ class Header extends React.Component {
   componentDidMount() {
     // console.log(JSON.parse(localStorage.getItem("mode")))
     const storedData = JSON.parse(localStorage.getItem("mode"))
-    console.log(
-      "the state of storeddata is " + JSON.stringify(this.state.darkMode)
-    )
+    // console.log(
+    //   "the state of storeddata is " + JSON.stringify(this.state.darkMode)
+    // )
     this.setState(() => {
       return {
         darkMode: storedData,
@@ -58,9 +58,9 @@ class Header extends React.Component {
       const parent = document.getElementById("parent")
       parent.classList.add("dark")
     }
-    console.log(
-      "the state of darkmode is " + JSON.stringify(this.state.darkMode)
-    )
+    // console.log(
+    //   "the state of darkmode is " + JSON.stringify(this.state.darkMode)
+    // )
   }
 
   render() {

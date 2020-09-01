@@ -14,6 +14,8 @@
 .parent.dark h4,
 .parent.dark p,
 .parent.dark a,
+.parent.dark ul,
+.parent.dark ol,
 .parent.dark i,
 .parent.dark path {
   color: #fcfcfc;
