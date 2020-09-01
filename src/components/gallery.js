@@ -6,42 +6,44 @@ const Gallery = () => {
     query galleryData {
       allDatoCmsProduct(filter: { productType: { eq: "Footwear" } }) {
         nodes {
+          productModel
+          colorS
+          sizes
           images {
             url
-            alt
           }
+          id
         }
       }
     }
   `)
-  // productType
-  // productModel
-  // brand
-  // colorS
-  // sizes
-  // price
-  // images {
-  //   url
-  //   alt
-  // }
-  // id
-
-  // const galleryArray = galleryData.allDatoCmsProduct.nodes
-  // galleryArray.forEach(item => {
-  //   let key = "url"
-  //   console.log(item)
-  //   const productGallery = item
-
-  //   // const imgagesArray = item.images
-  //   // // console.log(imgagesArray)
-  //   // imgagesArray.forEach(image => {
-  //   //   console.log(image[key])
-  //   // })
-  // })
 
   return (
-    <div>
-      <p></p>
+    <div style={{ display: `flex`, flexWrap: `wrap` }}>
+      {galleryData.allDatoCmsProduct.nodes.map(node => {
+        const productModel = node.productModel
+        const imagesArray = node.images
+        console.log(productModel + " " + "Images include: ")
+        imagesArray.forEach(array => {
+          for (let i in array) {
+            const url = array[i]
+            console.log(url)
+          }
+
+          // console.log(array[i])
+        })
+
+        // return <img alt={JSON.stringify(node.images)}></img>
+
+        // const imagesArray = node.images
+        // imagesArray.forEach(array => {
+        //   console.log(array)
+        // })
+
+        // imagesArray.forEach(image => {
+        //   for (let p in image) console.log(image[p])
+        // })
+      })}
     </div>
   )
 }
