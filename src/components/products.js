@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Product from "./product"
 import Styles from "../styles/ProductListing.module.css"
-import { node } from "prop-types"
 
 const Products = () => {
   //is the component for products listing
@@ -45,14 +44,6 @@ const Products = () => {
 
   removeDuplicates(productTypes)
 
-  // var arr = ["banana", "apple", "orange", "apple", "lemon", "lemon"]
-
-  // const removeDuplicates = data => {
-  //   return [...new Set(data)]
-  // }
-
-  // console.log(removeDuplicates(arr))
-
   return (
     <>
       {sortedProductTypes.map(productType => {
@@ -62,7 +53,7 @@ const Products = () => {
             <h2 className={Styles.ProductCategory}>{productType}</h2>
             <div id="ProductListing" className={Styles.ProductListing}>
               {productData.allDatoCmsProduct.nodes.map(node => {
-                if (node.productType == productType) {
+                if (node.productType === productType) {
                   return (
                     <Product
                       productModel={node.productModel}
