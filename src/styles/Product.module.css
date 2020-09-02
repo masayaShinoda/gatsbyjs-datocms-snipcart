@@ -4,7 +4,7 @@
 .productContainer {
   -ms-flex-preferred-size: 17.5vmax;
       flex-basis: 17.5vmax;
-  margin-top: 1.75vmax;
+  margin-bottom: 1.75vmax;
   background: rgba(250, 250, 250, 0.075);
   -webkit-box-shadow: 1vmin 1vmin 2.5vmax rgba(50, 50, 50, 0.125);
           box-shadow: 1vmin 1vmin 2.5vmax rgba(50, 50, 50, 0.125);

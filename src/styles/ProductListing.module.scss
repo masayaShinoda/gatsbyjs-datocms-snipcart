@@ -2,6 +2,14 @@
 
 //styling for <Products /> component
 
+.ProductCategory {
+  // the heading that displays a product's cateegory, i.e. T-Shirt, Footwear
+  margin: 2.5vmax 0;
+}
+.ProductCategory:nth-of-type(even) {
+  margin-top: 3.25vmax;
+}
+
 .ProductListing {
   display: flex;
   flex-direction: row;

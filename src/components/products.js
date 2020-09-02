@@ -59,7 +59,7 @@ const Products = () => {
         //return a product category for each product type that has been sorted
         return (
           <>
-            <h2>{productType}</h2>
+            <h2 className={Styles.ProductCategory}>{productType}</h2>
             <div id="ProductListing" className={Styles.ProductListing}>
               {productData.allDatoCmsProduct.nodes.map(node => {
                 if (node.productType == productType) {

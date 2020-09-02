@@ -22,7 +22,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <h1>{data.site.siteMetadata.title}</h1>
-      <p>Welcome to your new Gatsby site.</p>
+      <p>Welcome!</p>
       <Products />
       {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
