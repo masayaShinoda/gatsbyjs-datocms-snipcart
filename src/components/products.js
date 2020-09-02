@@ -2,11 +2,11 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Product from "./product"
 import Styles from "../styles/ProductListing.module.css"
+import { node } from "prop-types"
 
 const Products = () => {
   //is the component for products listing
 
-  //query only items that have productType of "Footwear"
   const productData = useStaticQuery(graphql`
     query productData {
       allDatoCmsProduct {
@@ -29,34 +29,54 @@ const Products = () => {
     }
   `)
 
-  const nodes = productData.allDatoCmsProduct.nodes
+  var productTypes = []
+  var sortedProductTypes = []
 
-  var arr = ["banana", "apple", "orange", "apple", "lemon", "lemon"]
+  const productTypeNodes = productData.allDatoCmsProduct.nodes
+
+  productTypeNodes.forEach(node => {
+    productTypes.push(node.productType)
+    // console.log(productTypes)
+  })
 
   const removeDuplicates = data => {
-    return [...new Set(data)]
+    sortedProductTypes = [...new Set(data)]
   }
 
-  console.log(removeDuplicates(arr))
+  removeDuplicates(productTypes)
+
+  // var arr = ["banana", "apple", "orange", "apple", "lemon", "lemon"]
+
+  // const removeDuplicates = data => {
+  //   return [...new Set(data)]
+  // }
+
+  // console.log(removeDuplicates(arr))
 
   return (
     <>
-      {nodes.map(node => {
-        const productTypes = []
-        console.log(productTypes)
+      {sortedProductTypes.map(productType => {
+        //return a product category for each product type that has been sorted
+        return (
+          <>
+            <h2>{productType}</h2>
+            <div id="ProductListing" className={Styles.ProductListing}>
+              {productData.allDatoCmsProduct.nodes.map(node => {
+                if (node.productType == productType) {
+                  return (
+                    <Product
+                      productModel={node.productModel}
+                      brand={node.brand}
+                      price={node.price}
+                      image={node.displayimg.url}
+                    />
+                  )
+                }
+              })}
+            </div>
+          </>
+        )
       })}
-      <div id="ProductListing" className={Styles.ProductListing}>
-        {productData.allDatoCmsProduct.nodes.map(node => {
-          return (
-            <Product
-              productModel={node.productModel}
-              brand={node.brand}
-              price={node.price}
-              image={node.displayimg.url}
-            />
-          )
-        })}
-      </div>
     </>
   )
 }
