@@ -17,6 +17,9 @@ const Products = () => {
           colorS
           sizes
           price
+          displayimg {
+            url
+          }
           images {
             url
             alt
@@ -27,14 +30,22 @@ const Products = () => {
     }
   `)
 
+  // const imagesArray = footwearProductData.allDatoCmsProduct.nodes.images
+  // imagesArray.forEach(array => {
+  //   console.log(array[0])
+  // })
+
   return (
     <div id="ProductListing" className={Styles.ProductListing}>
       {footwearProductData.allDatoCmsProduct.nodes.map(node => {
+        const nodes = footwearProductData.allDatoCmsProduct.nodes
+
         return (
           <Product
             productModel={node.productModel}
             brand={node.brand}
             price={node.price}
+            image={node.displayimg.url}
           />
         )
       })}

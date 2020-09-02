@@ -1,50 +1,59 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+
 class Gallery extends React.Component {
   constructor() {
     super()
     this.state = {
-      product: "",
+      productNames: [],
+      imgUrls: [],
     }
     this.extractImages = this.extractImages.bind(this)
   }
 
-  extractImages() {
-    this.props.nodes.map(node => {
-      const productModel = node.productModel
-      this.setState(() => {
-        return {
-          product: productModel,
-        }
-      })
-      const imagesArray = node.images
-      //for each productModel, console log its images
-      console.log(productModel + " " + "Images include: ")
-      imagesArray.forEach(array => {
-        for (let i in array) {
-          const url = array[i]
-          console.log(url)
-        }
-      })
+  extractImages(i) {
+    const nodes = this.props.nodes
+    // console.log(nodes[i])
+    const productModel = nodes[i].productModel
+    const imagesArray = nodes[i].images
+    const productImages = []
+
+    imagesArray.forEach(array => {
+      for (let i in array) {
+        const url = array[i]
+        console.log(productModel)
+        // console.log(url)
+        productImages.push(url)
+        // console.log(productImages)
+        // const imageTag = "<img src=" + { url } + " ></img>"
+      }
+    })
+
+    productImages.map(productImage => {
+      console.log(productImage)
+      this.state.imgUrls.push(productImage)
+      this.state.productNames.push(productModel)
     })
   }
 
   componentDidMount() {
-    this.extractImages()
+    const nodes = this.props.nodes
+    // console.log(nodes.length)
+    for (var i = 0; i < nodes.length; i++) {
+      console.log(i)
+      // more statements
+      this.extractImages(i)
+    }
   }
 
   render() {
-    console.log(this.state.product)
     return (
       <div style={{ display: `flex`, flexWrap: `wrap` }}>
-        {this.props.nodes.map(node => {
-          return (
-            <div>
-              <ul>
-                <li>Product name: {this.state.product}</li>
-              </ul>
-            </div>
-          )
+        {this.state.imgUrls.map(imgUrl => (
+          <img style={{ width: `25vmin` }} src={imgUrl} alt={imgUrl}></img>
+        ))}
+        {this.state.productNames.map(productName => {
+          return <p>{productName}</p>
         })}
       </div>
     )

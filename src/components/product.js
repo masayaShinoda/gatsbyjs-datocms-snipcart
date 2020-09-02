@@ -6,7 +6,9 @@ const Product = props => {
   return (
     <div className={Styles.productContainer}>
       <section className={Styles.upperSection}>
-        <div className={Styles.gallery}></div>
+        <div className={Styles.gallery}>
+          <img src={props.image}></img>
+        </div>
       </section>
       <section className={Styles.lowerSection}>
         <div>
