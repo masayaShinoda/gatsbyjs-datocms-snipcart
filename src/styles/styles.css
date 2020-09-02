@@ -29,6 +29,16 @@
   border-bottom: #988bdc 2px solid;
 }
 
+.parent.dark header nav a:hover {
+  color: #988bdc !important;
+}
+
+.parent.dark header nav a:hover i,
+.parent.dark header nav a:hover path,
+.parent.dark header nav a:hover p {
+  color: #988bdc !important;
+}
+
 * {
   margin: 0;
   padding: 0;

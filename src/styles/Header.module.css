@@ -29,6 +29,16 @@
   border-bottom: #988bdc 2px solid;
 }
 
+.parent.dark header nav a:hover {
+  color: #988bdc !important;
+}
+
+.parent.dark header nav a:hover i,
+.parent.dark header nav a:hover path,
+.parent.dark header nav a:hover p {
+  color: #988bdc !important;
+}
+
 .Header {
   background: rgba(240, 240, 240, 0.05);
   display: -webkit-box;
@@ -142,9 +152,9 @@
 .Header .headerContent nav ul li a:hover i,
 .Header .headerContent nav ul li a:hover path,
 .Header .headerContent nav ul li a:hover p {
+  color: #533dc4;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
-  color: #533dc4;
 }
 
 @media (max-width: 1023px) {

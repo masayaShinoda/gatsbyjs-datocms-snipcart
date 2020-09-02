@@ -69,8 +69,8 @@
             i,
             path,
             p {
-              transition: color 0.2s ease-in-out;
               color: lighten($primary-clr, 15%);
+              transition: color 0.2s ease-in-out;
             }
           }
         }

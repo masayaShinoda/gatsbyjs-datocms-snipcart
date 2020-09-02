@@ -20,7 +20,7 @@ $tertiary-clr: $lightpurple;
   #mobileNav {
     div {
       //coloring from burger nav
-      background: $dark-primary-clr !important;
+      background: $darkmode-primary-clr !important;
       // border: 1px solid red; //debug
     }
   }
@@ -29,10 +29,23 @@ $tertiary-clr: $lightpurple;
     div {
       section:nth-of-type(2) {
         h1 {
-          border-bottom: $dark-primary-clr 2px solid;
+          border-bottom: $darkmode-primary-clr 2px solid;
         }
       }
     }
   }
+  header {
+    nav {
+      a:hover {
+        color: $darkmode-primary-clr !important;
+        i,
+        path,
+        p {
+          color: $darkmode-primary-clr !important;
+        }
+      }
+    }
+  }
+
   // border: 1px solid green; //debug
 }
