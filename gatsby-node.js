@@ -11,6 +11,19 @@ module.exports.createPages = async ({ graphql, actions }) => {
     query productData {
       allDatoCmsProduct {
         nodes {
+          productType
+          productModel
+          brand
+          colorS
+          sizes
+          price
+          displayimg {
+            url
+          }
+          images {
+            url
+            alt
+          }
           id
         }
       }
@@ -25,6 +38,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
       path: `/product/${node.id}`, //dynamic based off of slug each post has
       context: {
         slug: node.id,
+        //passed down as context
+        currentProductData: node,
       },
     })
   })
