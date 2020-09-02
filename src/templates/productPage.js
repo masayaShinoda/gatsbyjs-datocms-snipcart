@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import Layout from "../components/layout"
 import Styles from "./ProductPage.module.css"
 
 const ProductPage = () => {
@@ -25,24 +26,26 @@ const ProductPage = () => {
     }
   `)
   return (
-    <div className={Styles.productPageContainer}>
-      <span className={Styles.productDetails}>
-        <h1>{currentProductData.allDatoCmsProduct.nodes[3].productModel}</h1>
-        <h3>{currentProductData.allDatoCmsProduct.nodes[3].brand}</h3>
-        <h2>${currentProductData.allDatoCmsProduct.nodes[3].price}</h2>
-        <p>
-          Available in: {currentProductData.allDatoCmsProduct.nodes[3].colorS}
-        </p>
-      </span>
-      <div className={Styles.gallery}>
-        {currentProductData.allDatoCmsProduct.nodes[3].images.map(image =>
-          // console.log(image.url)
-          {
-            return <img src={image.url} alt={image.alt}></img>
-          }
-        )}
+    <Layout>
+      <div className={Styles.productPageContainer}>
+        <span className={Styles.productDetails}>
+          <h1>{currentProductData.allDatoCmsProduct.nodes[3].productModel}</h1>
+          <h3>{currentProductData.allDatoCmsProduct.nodes[3].brand}</h3>
+          <h2>${currentProductData.allDatoCmsProduct.nodes[3].price}</h2>
+          <p>
+            Available in: {currentProductData.allDatoCmsProduct.nodes[3].colorS}
+          </p>
+        </span>
+        <div className={Styles.gallery}>
+          {currentProductData.allDatoCmsProduct.nodes[3].images.map(image =>
+            // console.log(image.url)
+            {
+              return <img src={image.url} alt={image.alt}></img>
+            }
+          )}
+        </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 

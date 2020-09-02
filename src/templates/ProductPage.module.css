@@ -32,14 +32,17 @@
   overflow-y: scroll;
 }
 
+.productPageContainer .gallery img {
+  margin: 0;
+}
+
 @media (max-width: 1023px) {
   .productPageContainer .productDetails {
-    padding: 1.25vmax 3.25vmax;
-    margin-right: 1.25vmax;
+    margin-right: 5vmax;
   }
   .productPageContainer .gallery {
-    max-width: 35vmax;
-    max-height: 35vmax;
+    max-width: 40vmax;
+    max-height: 40vmax;
   }
 }
 

@@ -1,24 +1,31 @@
-// const path = require('path');
-// const data = require('./productsData.js');
+// code for generating slug for each blog post
+const path = require("path")
 
-// exports.createPages = ({ boundActionCreators }) => {
-//   const { createPage } = boundActionCreators;
+//create new page for every new post
+module.exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
 
-//   // Your component that should be rendered for every item in JSON.
-//   const template = path.resolve(`src/template.js`);
+  //1. Get path to template
+  const productTemplate = path.resolve("./src/templates/productPage.js")
+  const res = await graphql(`
+    query productData {
+      allDatoCmsProduct {
+        nodes {
+          id
+        }
+      }
+    }
+  `)
 
-//   // Create pages for each JSON entry.
-//   data.forEach(({ page }) => {
-//     const path = page;
-
-//     createPage({
-//       path,
-//       component: template,
-
-//       // Send additional data to page from JSON (or query inside template)
-//       context: {
-//         path
-//       }
-//     });
-//   });
-// };
+  //2. Get product data
+  res.data.allDatoCmsProduct.nodes.forEach(node => {
+    createPage({
+      //3. Create new pages
+      component: productTemplate,
+      path: `/product/${node.id}`, //dynamic based off of slug each post has
+      context: {
+        slug: node.id,
+      },
+    })
+  })
+}
