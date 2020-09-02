@@ -32,6 +32,17 @@
   overflow-y: scroll;
 }
 
+@media (max-width: 1023px) {
+  .productPageContainer .productDetails {
+    padding: 1.25vmax 3.25vmax;
+    margin-right: 1.25vmax;
+  }
+  .productPageContainer .gallery {
+    max-width: 35vmax;
+    max-height: 35vmax;
+  }
+}
+
 @media (max-width: 480px) {
   .productPageContainer {
     -webkit-box-orient: vertical;
@@ -53,6 +64,7 @@
             flex-direction: row;
     max-width: 90vw;
     max-height: 90vw;
+    /* Hide scrollbar for IE, Edge and Firefox */
   }
   .productPageContainer .gallery img {
     min-width: 100%;

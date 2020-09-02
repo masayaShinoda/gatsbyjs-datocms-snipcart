@@ -19,6 +19,18 @@
     overflow-y: scroll;
   }
 }
+@media (max-width: $tablet-bp) {
+  .productPageContainer {
+    .productDetails {
+      padding: 1.25vmax 3.25vmax;
+      margin-right: 1.25vmax;
+    }
+    .gallery {
+      max-width: 35vmax;
+      max-height: 35vmax;
+    }
+  }
+}
 @media (max-width: $mobile-bp) {
   .productPageContainer {
     flex-direction: column-reverse;
@@ -34,9 +46,16 @@
       flex-direction: row;
       max-width: 90vw;
       max-height: 90vw;
+      /* Hide scrollbar for IE, Edge and Firefox */
+      // -ms-overflow-style: none; /* IE and Edge */
+      // scrollbar-width: none; /* Firefox */
       img {
         min-width: 100%;
       }
     }
+    // .gallery::-webkit-scrollbar {
+    //   /* Hide scrollbar for Chrome, Safari and Opera */
+    //   display: none;
+    // }
   }
 }
