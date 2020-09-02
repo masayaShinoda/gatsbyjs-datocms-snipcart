@@ -23,6 +23,7 @@ const Products = () => {
             url
             alt
           }
+          id
         }
       }
     }
@@ -60,6 +61,7 @@ const Products = () => {
                       brand={node.brand}
                       price={node.price}
                       image={node.displayimg.url}
+                      id={node.id}
                     />
                   )
                 }

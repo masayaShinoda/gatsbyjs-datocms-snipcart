@@ -10,39 +10,44 @@
           box-shadow: 1vmin 1vmin 2.5vmax rgba(50, 50, 50, 0.125);
 }
 
-.productContainer .upperSection {
+.productContainer .itemLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.productContainer .itemLink .upperSection {
   height: 17.5vmax;
   overflow: hidden;
 }
 
-.productContainer .upperSection .gallery {
+.productContainer .itemLink .upperSection .gallery {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.productContainer .lowerSection {
+.productContainer .itemLink .lowerSection {
   min-height: 30%;
   padding: 0.8em 1.1em;
 }
 
-.productContainer .lowerSection .productModel,
-.productContainer .lowerSection .productBrand,
-.productContainer .lowerSection .productPrice {
+.productContainer .itemLink .lowerSection .productModel,
+.productContainer .itemLink .lowerSection .productBrand,
+.productContainer .itemLink .lowerSection .productPrice {
   margin: 0;
 }
 
-.productContainer .lowerSection .productModel {
+.productContainer .itemLink .lowerSection .productModel {
   font-size: 1.25em;
   border-bottom: #3a2a8a 2px solid;
   padding-bottom: 0.25em;
 }
 
-.productContainer .lowerSection .productBrand {
+.productContainer .itemLink .lowerSection .productBrand {
   font-size: 0.9em;
   margin-bottom: 0.5em;
 }
 
-.productContainer .lowerSection .productPrice {
+.productContainer .itemLink .lowerSection .productPrice {
   font-size: 1.25em;
   margin-bottom: 0;
 }

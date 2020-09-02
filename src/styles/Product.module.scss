@@ -12,35 +12,39 @@
   ); //brighten product card to set apart from bg
   box-shadow: 1vmin 1vmin 2.5vmax rgba(50, 50, 50, 0.125);
   // border: 1px solid red; //debug
-  .upperSection {
-    height: 17.5vmax;
-    overflow: hidden;
-    // border: 1px solid green; //debug
-    .gallery {
-      object-fit: cover;
+  .itemLink {
+    text-decoration: none;
+    color: inherit; //removes the styling caused by visited links
+    .upperSection {
+      height: 17.5vmax;
+      overflow: hidden;
+      // border: 1px solid green; //debug
+      .gallery {
+        object-fit: cover;
+      }
     }
-  }
-  .lowerSection {
-    min-height: 30%;
-    padding: 0.8em 1.1em;
-    // border: 1px solid blue; //debug
-    .productModel,
-    .productBrand,
-    .productPrice {
-      margin: 0; //reset margin inherited from global styles
-    }
-    .productModel {
-      font-size: 1.25em;
-      border-bottom: $primary-clr 2px solid;
-      padding-bottom: 0.25em;
-    }
-    .productBrand {
-      font-size: 0.9em;
-      margin-bottom: 0.5em;
-    }
-    .productPrice {
-      font-size: 1.25em;
-      margin-bottom: 0;
+    .lowerSection {
+      min-height: 30%;
+      padding: 0.8em 1.1em;
+      // border: 1px solid blue; //debug
+      .productModel,
+      .productBrand,
+      .productPrice {
+        margin: 0; //reset margin inherited from global styles
+      }
+      .productModel {
+        font-size: 1.25em;
+        border-bottom: $primary-clr 2px solid;
+        padding-bottom: 0.25em;
+      }
+      .productBrand {
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+      }
+      .productPrice {
+        font-size: 1.25em;
+        margin-bottom: 0;
+      }
     }
   }
 }
