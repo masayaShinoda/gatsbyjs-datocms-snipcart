@@ -7,9 +7,9 @@ const Products = () => {
   //is the component for products listing
 
   //query only items that have productType of "Footwear"
-  const footwearProductData = useStaticQuery(graphql`
-    query footwearProductData {
-      allDatoCmsProduct(filter: { productType: { eq: "Footwear" } }) {
+  const productData = useStaticQuery(graphql`
+    query productData {
+      allDatoCmsProduct {
         nodes {
           productType
           productModel
@@ -24,32 +24,40 @@ const Products = () => {
             url
             alt
           }
-          id
         }
       }
     }
   `)
 
-  // const imagesArray = footwearProductData.allDatoCmsProduct.nodes.images
-  // imagesArray.forEach(array => {
-  //   console.log(array[0])
-  // })
+  const nodes = productData.allDatoCmsProduct.nodes
+
+  var arr = ["banana", "apple", "orange", "apple", "lemon", "lemon"]
+
+  const removeDuplicates = data => {
+    return [...new Set(data)]
+  }
+
+  console.log(removeDuplicates(arr))
 
   return (
-    <div id="ProductListing" className={Styles.ProductListing}>
-      {footwearProductData.allDatoCmsProduct.nodes.map(node => {
-        const nodes = footwearProductData.allDatoCmsProduct.nodes
-
-        return (
-          <Product
-            productModel={node.productModel}
-            brand={node.brand}
-            price={node.price}
-            image={node.displayimg.url}
-          />
-        )
+    <>
+      {nodes.map(node => {
+        const productTypes = []
+        console.log(productTypes)
       })}
-    </div>
+      <div id="ProductListing" className={Styles.ProductListing}>
+        {productData.allDatoCmsProduct.nodes.map(node => {
+          return (
+            <Product
+              productModel={node.productModel}
+              brand={node.brand}
+              price={node.price}
+              image={node.displayimg.url}
+            />
+          )
+        })}
+      </div>
+    </>
   )
 }
 

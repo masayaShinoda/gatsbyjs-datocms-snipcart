@@ -4,6 +4,7 @@
 .productContainer {
   -ms-flex-preferred-size: 17.5vmax;
       flex-basis: 17.5vmax;
+  margin-top: 1.75vmax;
   background: rgba(250, 250, 250, 0.075);
   -webkit-box-shadow: 1vmin 1vmin 2.5vmax rgba(50, 50, 50, 0.125);
           box-shadow: 1vmin 1vmin 2.5vmax rgba(50, 50, 50, 0.125);
@@ -47,7 +48,8 @@
 }
 
 .productContainer:nth-of-type(even) {
-  margin: 0 1.25vmax;
+  margin-left: 1.25vmax;
+  margin-right: 1.25vmax;
 }
 
 @media (max-width: 1023px) {
@@ -67,10 +69,14 @@
   .productContainer .lowerSection .productPrice {
     font-size: 1.1em;
   }
-  .productContainer:nth-of-type(even) {
+  .productContainer:nth-of-type(even),
+  .productContainer:nth-of-type(2n + 1) {
     margin: 0 1.75vmax;
   }
   .productContainer:nth-of-type(3n + 1) {
+    margin: 0;
+  }
+  .productContainer:nth-of-type(3n) {
     margin: 0;
   }
   .productContainer:nth-of-type(n) {
