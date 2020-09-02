@@ -16,7 +16,7 @@
 
 .productPageContainer .productDetails {
   padding: 2.5vmax 4.25vmax;
-  margin-right: 3.25vmax;
+  margin-right: 5vmax;
 }
 
 .productPageContainer .gallery {
@@ -37,9 +37,6 @@
 }
 
 @media (max-width: 1023px) {
-  .productPageContainer .productDetails {
-    margin-right: 5vmax;
-  }
   .productPageContainer .gallery {
     max-width: 40vmax;
     max-height: 40vmax;

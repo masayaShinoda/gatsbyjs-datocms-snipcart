@@ -8,7 +8,7 @@
   .productDetails {
     // text-align: right;
     padding: 2.5vmax 4.25vmax;
-    margin-right: 3.25vmax;
+    margin-right: 5vmax;
     // border: 1px solid green; //debug
   }
   .gallery {
@@ -24,9 +24,6 @@
 }
 @media (max-width: $tablet-bp) {
   .productPageContainer {
-    .productDetails {
-      margin-right: 5vmax;
-    }
     .gallery {
       max-width: 40vmax;
       max-height: 40vmax;

@@ -7,6 +7,7 @@ import {
   faArrowCircleRight,
   faTimes,
   faInfoCircle,
+  faHome,
 } from "@fortawesome/free-solid-svg-icons"
 
 //styles import
@@ -16,6 +17,16 @@ import mobileNavStyles from "../styles/MobileNav.module.css"
 const NavList = () => {
   return (
     <ul className={Styles.navList}>
+      <li>
+        <Link to="/">
+          <FontAwesomeIcon
+            size="1x"
+            icon={faHome}
+            style={{ marginRight: `.5em`, maxWidth: `2.5rem` }}
+          />
+          Home
+        </Link>
+      </li>
       <li>
         <Link to="/">
           <FontAwesomeIcon
