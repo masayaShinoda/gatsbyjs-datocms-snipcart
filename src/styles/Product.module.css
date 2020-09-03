@@ -52,6 +52,23 @@
   margin-bottom: 0;
 }
 
+.productContainer .itemLink .lowerSection .addToCartBtn {
+  background: #3a2a8a;
+  padding: 0.5rem 1.1rem;
+  margin-left: 0.8rem;
+  color: #fcfcfc;
+  text-decoration: none;
+  border-radius: 2.5vmin;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.productContainer .itemLink .lowerSection .addToCartBtn:hover {
+  background: #533dc4;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
 .productContainer:nth-of-type(even) {
   margin-left: 1.25vmax;
   margin-right: 1.25vmax;

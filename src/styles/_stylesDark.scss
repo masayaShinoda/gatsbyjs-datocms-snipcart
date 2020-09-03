@@ -46,6 +46,13 @@ $tertiary-clr: $lightpurple;
       }
     }
   }
-
+  .snipcart-add-item {
+    // border: 1px solid red; //debug
+    background: $darkmode-primary-clr !important;
+  }
+  .snipcart-add-item:hover {
+    background: saturate($darkmode-primary-clr, 15%) !important;
+    // border: 1px solid green; //debug
+  }
   // border: 1px solid green; //debug
 }
