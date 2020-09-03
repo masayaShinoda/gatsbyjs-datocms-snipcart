@@ -58,7 +58,7 @@
           margin: 0;
           a {
             padding: 0.25vmin 1.1vmax;
-            font-family: $font-heading;
+            font-family: $font-subheading;
             font-weight: 700;
             text-decoration: none;
             transition: color 0.2s ease-in-out;
@@ -68,7 +68,6 @@
               position: fixed;
               background: #fcfcfc;
               box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.125);
-
               p {
                 color: #212121 !important;
                 font-family: $font-body;
@@ -93,7 +92,6 @@
         li:hover .snipcartSummary {
           display: flex;
           flex-direction: column;
-
           p {
             margin: 0;
           }
@@ -174,6 +172,22 @@
         text-decoration: none;
         font-size: 2.5rem;
         // border: 1px solid blue; //debug
+        .snipcartSummary {
+          position: fixed;
+          display: flex;
+          margin-top: 5.25rem;
+
+          // border: 1px solid red; //debug
+          p {
+            margin: 0;
+          }
+          p:nth-of-type(odd) {
+            margin-left: 0.8rem;
+          }
+          p:nth-of-type(even) {
+            margin-left: 0.5rem;
+          }
+        }
       }
     }
   }
