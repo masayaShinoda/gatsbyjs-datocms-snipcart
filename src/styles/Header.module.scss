@@ -62,6 +62,22 @@
             font-weight: 700;
             text-decoration: none;
             transition: color 0.2s ease-in-out;
+            .snipcartSummary {
+              display: none; // only appear when user hovers over the cart link
+              padding: 0.25vmin 1.1vmax;
+              position: fixed;
+              background: #fcfcfc;
+              box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.125);
+
+              p {
+                color: #212121 !important;
+                font-family: $font-body;
+              }
+              .itemCount {
+                font-weight: 400;
+              }
+              // border: 1px solid red; //debug
+            }
           }
           a:hover {
             color: lighten($primary-clr, 15%);
@@ -72,6 +88,14 @@
               color: lighten($primary-clr, 15%);
               transition: color 0.2s ease-in-out;
             }
+          }
+        }
+        li:hover .snipcartSummary {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            margin: 0;
           }
         }
       }

@@ -38,7 +38,7 @@ const NavList = () => {
         </Link>
       </li>
       <li>
-        <Link to="/">
+        <Link to="/" className="snipcart-checkout">
           {" "}
           <FontAwesomeIcon
             size="1x"
@@ -46,6 +46,12 @@ const NavList = () => {
             style={{ marginRight: `.5em`, maxWidth: `2.5rem` }}
           />
           Cart
+          <div className={"snipcart-summary" + " " + Styles.snipcartSummary}>
+            <p>Items:</p>
+            <p className={"snipcart-total-items" + " " + Styles.itemCount}></p>
+            <p>Total:</p>
+            <p className={"snipcart-total-price" + " " + Styles.itemCount}></p>
+          </div>
         </Link>
       </li>
       <li>

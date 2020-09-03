@@ -17,6 +17,17 @@ const Product = props => {
             <h1 className={Styles.productModel}>{props.productModel}</h1>
             <p className={Styles.productBrand}>{props.brand}</p>
             <h2 className={Styles.productPrice}>${props.price}</h2>
+            <a
+              href="#"
+              className="snipcart-add-item"
+              data-item-id={props.id}
+              data-item-price={props.price}
+              data-item-image={props.image}
+              data-item-name={props.productModel}
+              data-item-url={`/`}
+            >
+              Add to cart
+            </a>
           </div>
         </section>
       </Link>

@@ -35,6 +35,14 @@ module.exports = {
         disableLiveReload: false,
       },
     },
+    {
+      resolve: "gatsby-plugin-snipcart",
+      options: {
+        apiKey:
+          "Yzg2Y2Q2MTctODgwOS00Yjg3LTllN2UtZjUwY2MyYjkyNzY0NjM3MzM4NzExMDk3MDkxMDU5",
+        autopop: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -143,6 +143,24 @@
   transition: color 0.2s ease-in-out;
 }
 
+.Header .headerContent nav ul li a .snipcartSummary {
+  display: none;
+  padding: 0.25vmin 1.1vmax;
+  position: fixed;
+  background: #fcfcfc;
+  -webkit-box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.125);
+          box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.125);
+}
+
+.Header .headerContent nav ul li a .snipcartSummary p {
+  color: #212121 !important;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.Header .headerContent nav ul li a .snipcartSummary .itemCount {
+  font-weight: 400;
+}
+
 .Header .headerContent nav ul li a:hover {
   color: #533dc4;
   -webkit-transition: color 0.2s ease-in-out;
@@ -155,6 +173,20 @@
   color: #533dc4;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
+}
+
+.Header .headerContent nav ul li:hover .snipcartSummary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Header .headerContent nav ul li:hover .snipcartSummary p {
+  margin: 0;
 }
 
 @media (max-width: 1023px) {
