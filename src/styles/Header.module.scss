@@ -172,11 +172,14 @@
         text-decoration: none;
         font-size: 2.5rem;
         // border: 1px solid blue; //debug
-        .snipcartSummary {
-          position: fixed;
-          display: flex;
-          margin-top: 5.25rem;
+      }
+      .snipcartCheckoutCart {
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid blue; //debug
 
+        .snipcartSummary {
+          display: flex;
           // border: 1px solid red; //debug
           p {
             margin: 0;

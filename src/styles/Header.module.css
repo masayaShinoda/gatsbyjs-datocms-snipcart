@@ -303,23 +303,31 @@
   font-size: 2.5rem;
 }
 
-.mobileOverlay ul li a .snipcartSummary {
-  position: fixed;
+.mobileOverlay ul li .snipcartCheckoutCart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5.25rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.mobileOverlay ul li a .snipcartSummary p {
+.mobileOverlay ul li .snipcartCheckoutCart .snipcartSummary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobileOverlay ul li .snipcartCheckoutCart .snipcartSummary p {
   margin: 0;
 }
 
-.mobileOverlay ul li a .snipcartSummary p:nth-of-type(odd) {
+.mobileOverlay ul li .snipcartCheckoutCart .snipcartSummary p:nth-of-type(odd) {
   margin-left: 0.8rem;
 }
 
-.mobileOverlay ul li a .snipcartSummary p:nth-of-type(even) {
+.mobileOverlay ul li .snipcartCheckoutCart .snipcartSummary p:nth-of-type(even) {
   margin-left: 0.5rem;
 }
 

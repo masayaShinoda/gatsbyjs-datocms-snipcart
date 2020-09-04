@@ -27,14 +27,15 @@ const NavList = () => {
         </Link>
       </li>
       <li>
-        <Link to="/" className="snipcart-checkout">
-          {" "}
-          <FontAwesomeIcon
-            size="1x"
-            icon={faShoppingCart}
-            style={{ marginRight: `.5em`, maxWidth: `2.5rem` }}
-          />
-          Cart
+        <Link to="/" className={Styles.snipcartCheckoutCart}>
+          <span>
+            <FontAwesomeIcon
+              size="1x"
+              icon={faShoppingCart}
+              style={{ marginRight: `.5em`, maxWidth: `2.5rem` }}
+            />
+            Cart
+          </span>
           <div className={"snipcart-summary" + " " + Styles.snipcartSummary}>
             <p>Items:</p>
             <p className={"snipcart-total-items" + " " + Styles.itemCount}></p>
