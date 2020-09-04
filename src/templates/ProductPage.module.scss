@@ -1,19 +1,32 @@
 @import "../styles/_variables.scss";
 @import "../styles/_stylesDark.scss";
-// @import "../styles/Product.module.scss";
+@import "../styles/Product.module.scss";
 
 .productPageContainer {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.05fr 1fr;
+  grid-column-gap: 2.5vw;
+  grid-row-gap: 2.5vh;
+  padding-bottom: 5vh;
   // border: 1px solid red; //debug
+  .upperDiv {
+    // border: 1px solid blue; //debug
+    grid-area: 1 / 1 / 2 / 3;
+    a {
+      font-size: 2.5rem;
+      text-decoration: none;
+    }
+  }
   .productDetails {
     // text-align: right;
-    padding: 2.5vmax 4.25vmax;
-    margin-right: 5vmax;
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 2.5vmax 2.5vmax;
+    // margin-right: 5vmax;
     // border: 1px solid green; //debug
   }
   .gallery {
+    grid-area: 2 / 1 / 3 / 2;
     display: flex;
     flex-direction: column;
     max-width: 37.5vmax;

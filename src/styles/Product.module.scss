@@ -45,23 +45,25 @@
         font-size: 1.25em;
         margin-bottom: 0;
       }
-      .addToCartBtn {
-        // border: 1px solid red; //debug
-        background: $primary-clr;
-        padding: 0.5rem 1.1rem;
-        margin-left: 0.8rem;
-        color: #fcfcfc;
-        text-decoration: none;
-        border-radius: 2.5vmin;
-        transition: 0.2s ease-in-out;
-      }
-      .addToCartBtn:hover {
-        background: lighten($primary-clr, 15%);
-        transition: 0.2s ease-in-out;
-      }
     }
   }
 }
+
+.addToCartBtn {
+  // border: 1px solid red; //debug
+  background: $primary-clr;
+  padding: 0.5rem 1.1rem;
+
+  color: #fcfcfc !important;
+  text-decoration: none;
+  border-radius: 2.5vmin;
+  transition: 0.2s ease-in-out;
+}
+.addToCartBtn:hover {
+  background: lighten($primary-clr, 15%);
+  transition: 0.2s ease-in-out;
+}
+
 .productContainer:nth-of-type(even) {
   margin-left: 1.25vmax;
   margin-right: 1.25vmax;

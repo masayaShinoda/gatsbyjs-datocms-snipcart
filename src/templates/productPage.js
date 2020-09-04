@@ -1,8 +1,9 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Styles from "./ProductPage.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons"
+import { faArrowLeft, faShoppingCart } from "@fortawesome/free-solid-svg-icons"
 
 const ProductPage = ({ pageContext }) => {
   const { currentProductData } = pageContext
@@ -10,7 +11,17 @@ const ProductPage = ({ pageContext }) => {
   return (
     <Layout>
       <div className={Styles.productPageContainer}>
-        <span className={Styles.productDetails}>
+        <div className={Styles.upperDiv}>
+          <Link to="/" style={{ display: `flex`, alignItems: `center` }}>
+            <FontAwesomeIcon
+              size="xs"
+              icon={faArrowLeft}
+              style={{ marginRight: `.8rem`, maxWidth: `2.5rem` }}
+            />
+            Back
+          </Link>
+        </div>
+        <div className={Styles.productDetails}>
           <h1>{currentProductData.productModel}</h1>
           <h3>{currentProductData.brand}</h3>
           <h2>${currentProductData.price}</h2>
@@ -41,7 +52,7 @@ const ProductPage = ({ pageContext }) => {
               Add to cart
             </a>
           </span>
-        </span>
+        </div>
         <div className={Styles.gallery}>
           {currentProductData.images.map(image =>
             // console.log(image.url)
