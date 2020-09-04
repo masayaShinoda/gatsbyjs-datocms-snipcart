@@ -21,6 +21,14 @@ const ProductPage = ({ pageContext }) => {
             Back
           </Link>
         </div>
+        <div className={Styles.gallery}>
+          {currentProductData.images.map(image =>
+            // console.log(image.url)
+            {
+              return <img src={image.url} alt={image.alt}></img>
+            }
+          )}
+        </div>
         <div className={Styles.productDetails}>
           <h1>{currentProductData.productModel}</h1>
           <h3>{currentProductData.brand}</h3>
@@ -52,14 +60,6 @@ const ProductPage = ({ pageContext }) => {
               Add to cart
             </a>
           </span>
-        </div>
-        <div className={Styles.gallery}>
-          {currentProductData.images.map(image =>
-            // console.log(image.url)
-            {
-              return <img src={image.url} alt={image.alt}></img>
-            }
-          )}
         </div>
       </div>
     </Layout>

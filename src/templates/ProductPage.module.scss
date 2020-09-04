@@ -47,7 +47,8 @@
 }
 @media (max-width: $mobile-bp) {
   .productPageContainer {
-    flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     .productDetails {
       // text-align: right;
