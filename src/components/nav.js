@@ -110,6 +110,7 @@ const Nav = () => {
           onKeyDown={handleMobileNav}
           className={mobileNavStyles.mobileNav}
           id="mobileNav"
+          tabindex="-1" //remove from tab order so that desktop versions dont accidentally open mobileNav
         >
           <div></div>
           <div></div>
