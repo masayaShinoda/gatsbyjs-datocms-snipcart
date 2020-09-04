@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faShoppingCart,
-  faArrowCircleRight,
   faTimes,
   faInfoCircle,
   faHome,
@@ -25,16 +24,6 @@ const NavList = () => {
             style={{ marginRight: `.5em`, maxWidth: `2.5rem` }}
           />
           Home
-        </Link>
-      </li>
-      <li>
-        <Link to="/">
-          <FontAwesomeIcon
-            size="1x"
-            icon={faArrowCircleRight}
-            style={{ marginRight: `.5em`, maxWidth: `2.5rem` }}
-          />
-          Sign In
         </Link>
       </li>
       <li>
