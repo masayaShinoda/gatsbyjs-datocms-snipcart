@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
+import Landing from "../components/landing"
 import SEO from "../components/seo"
 
 import "../styles/styles.css"
@@ -21,10 +22,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <h1>{data.site.siteMetadata.title}</h1>
-
-      {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div> */}
+      <Landing />
     </Layout>
   )
 }

@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap");
+.parent.dark {
+  background: #2b2b2b;
+}
+
+.parent.dark h1,
+.parent.dark h2,
+.parent.dark h3,
+.parent.dark h4,
+.parent.dark p,
+.parent.dark a,
+.parent.dark ul,
+.parent.dark ol,
+.parent.dark i,
+.parent.dark path {
+  color: #fcfcfc;
+}
+
+.parent.dark #mobileNav div {
+  background: #7664d0 !important;
+}
+
+.parent.dark #ProductListing div section:nth-of-type(2) h1 {
+  border-bottom: #7664d0 2px solid;
+}
+
+.parent.dark header nav a:hover {
+  color: #7664d0 !important;
+}
+
+.parent.dark header nav a:hover i,
+.parent.dark header nav a:hover path,
+.parent.dark header nav a:hover p {
+  color: #7664d0 !important;
+}
+
+.parent.dark .snipcart-add-item {
+  background: #7664d0 !important;
+}
+
+.parent.dark .snipcart-add-item:hover {
+  background: #6c55df !important;
+}
+
+.parent.dark footer {
+  color: #fcfcfc;
+}
+
+.landing {
+  border: 1px solid red;
+}
+/*# sourceMappingURL=Landing.module.css.map */

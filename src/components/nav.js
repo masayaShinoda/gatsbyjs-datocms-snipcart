@@ -38,7 +38,10 @@ const NavList = () => {
         </Link>
       </li>
       <li>
-        <Link to="/" className={Styles.snipcartCheckoutCart}>
+        <Link
+          to="/"
+          className={"snipcart-checkout" + " " + Styles.snipcartCheckoutCart}
+        >
           <span>
             <FontAwesomeIcon
               size="1x"
