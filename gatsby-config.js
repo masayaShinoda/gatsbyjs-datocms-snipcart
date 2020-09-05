@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Masaya Store`,
+    title: `Test E-commerce Project`,
     description: `E-commerce site built with GatsbyJS and DatoCMS.`,
     author: `Masaya`,
   },
