@@ -66,6 +66,7 @@
       // scrollbar-width: none; /* Firefox */
       img {
         min-width: 100%;
+        object-fit: cover;
       }
     }
     // .gallery::-webkit-scrollbar {
