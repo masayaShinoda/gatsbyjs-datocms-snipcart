@@ -47,6 +47,10 @@
   background: #6c55df !important;
 }
 
+.parent.dark footer {
+  color: #fcfcfc;
+}
+
 .Header {
   background: rgba(240, 240, 240, 0.05);
   display: -webkit-box;

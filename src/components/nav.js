@@ -7,6 +7,7 @@ import {
   faTimes,
   faInfoCircle,
   faHome,
+  faShoppingBag,
 } from "@fortawesome/free-solid-svg-icons"
 
 //styles import
@@ -24,6 +25,16 @@ const NavList = () => {
             style={{ marginRight: `.5em`, maxWidth: `2.5rem` }}
           />
           Home
+        </Link>
+      </li>
+      <li>
+        <Link to="/products">
+          <FontAwesomeIcon
+            size="1x"
+            icon={faShoppingBag}
+            style={{ marginRight: `.5em`, maxWidth: `2.5rem` }}
+          />
+          Products
         </Link>
       </li>
       <li>

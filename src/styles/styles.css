@@ -47,6 +47,10 @@
   background: #6c55df !important;
 }
 
+.parent.dark footer {
+  color: #fcfcfc;
+}
+
 * {
   margin: 0;
   padding: 0;

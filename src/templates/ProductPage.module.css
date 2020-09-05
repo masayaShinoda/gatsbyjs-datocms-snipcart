@@ -50,6 +50,10 @@
   background: #6c55df !important;
 }
 
+.parent.dark footer {
+  color: #fcfcfc;
+}
+
 .productContainer {
   -ms-flex-preferred-size: 17.5vmax;
       flex-basis: 17.5vmax;
