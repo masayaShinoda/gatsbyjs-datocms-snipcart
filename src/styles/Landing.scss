@@ -39,20 +39,30 @@
 }
 @media (max-width: $mobile-bp) {
   .each-slide {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    // border: 1px solid red; //debug
   }
   .each-slide > div {
     width: 100%;
 
     margin: 0;
     // border: 1px solid red; //debug
+    max-width: 80%;
+    min-height: 0; //cancel min height set by desktop viewport
   }
   .each-slide > div:nth-of-type(odd) {
-    margin: 0;
+    // border: 1px solid green; //debug
+    margin: 0; // cancel margin set by desktop viewport
+    min-height: 50vh;
   }
   .each-slide > div:nth-of-type(even) {
-    margin: 0vh;
-    min-height: 0; //cancel min height set by desktop viewport
+    align-items: flex-start;
+    // border: 1px solid blue; //debug
+    margin: 0; // cancel margin set by desktop viewport
+    margin-top: 2.5vmax;
     // border: 1px solid green; //debug
   }
 }
