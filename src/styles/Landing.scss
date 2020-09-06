@@ -1,0 +1,62 @@
+@import "_variables.scss";
+@import "_stylesDark.scss";
+
+.Landing {
+  margin-bottom: 2.5vmax;
+  // border: 1px solid red; //debug
+}
+.each-slide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  // border: 1px solid blue; //debug
+}
+
+.each-slide > div {
+  // grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  min-height: 65vh;
+
+  // border: 1px solid red; //debug
+  // -webkit-box-shadow: -43px -23px 0px 3px $primary-clr;
+  // -moz-box-shadow: -43px -23px 0px 3px $primary-clr;
+  // box-shadow: -43px -23px 0px 3px $primary-clr;
+}
+.each-slide > div:nth-of-type(odd) {
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+.each-slide > div:nth-of-type(even) {
+  margin-right: 5vw;
+  margin-top: 5vh;
+}
+@media (max-width: $mobile-bp) {
+  .each-slide {
+    grid-template-columns: 1fr;
+  }
+  .each-slide > div {
+    width: 100%;
+
+    margin: 0;
+    // border: 1px solid red; //debug
+  }
+  .each-slide > div:nth-of-type(odd) {
+    margin: 0;
+  }
+  .each-slide > div:nth-of-type(even) {
+    margin: 0vh;
+    min-height: 0; //cancel min height set by desktop viewport
+    // border: 1px solid green; //debug
+  }
+}
+
+.each-slide span {
+  display: none;
+}
