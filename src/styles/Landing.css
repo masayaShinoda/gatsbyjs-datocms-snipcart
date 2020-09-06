@@ -55,6 +55,31 @@
   margin-bottom: 2.5vmax;
 }
 
+.Landing section {
+  height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Landing section h1 {
+  max-width: 75%;
+}
+
+.Landing section a {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-bottom: 5px dashed #3a2a8a;
+}
+
 .each-slide {
   display: -ms-grid;
   display: grid;
@@ -124,6 +149,7 @@
   }
   .nav {
     z-index: 5 !important;
+    background: none;
   }
 }
 

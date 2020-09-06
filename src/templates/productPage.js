@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import BackButton from "../components/backBtn"
 import Styles from "./ProductPage.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowLeft, faShoppingCart } from "@fortawesome/free-solid-svg-icons"
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons"
 
 const ProductPage = ({ pageContext }) => {
   const { currentProductData } = pageContext
@@ -12,14 +13,7 @@ const ProductPage = ({ pageContext }) => {
     <Layout>
       <div className={Styles.productPageContainer}>
         <div className={Styles.upperDiv}>
-          <Link to="/" style={{ display: `flex`, alignItems: `center` }}>
-            <FontAwesomeIcon
-              size="xs"
-              icon={faArrowLeft}
-              style={{ marginRight: `.8rem`, maxWidth: `2.5rem` }}
-            />
-            Back
-          </Link>
+          <BackButton destination="/" />
         </div>
         <div className={Styles.gallery}>
           {currentProductData.images.map(image =>

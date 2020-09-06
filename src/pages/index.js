@@ -22,7 +22,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
-      <Landing />
+      <Landing title={data.site.siteMetadata.title} />
     </Layout>
   )
 }

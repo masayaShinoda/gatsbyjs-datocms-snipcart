@@ -1,6 +1,7 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Product from "./product"
+import BackButton from "./backBtn"
 import Styles from "../styles/ProductListing.module.css"
 
 const Products = () => {
@@ -51,6 +52,7 @@ const Products = () => {
         //return a product category for each product type that has been sorted
         return (
           <>
+            <BackButton destination="/" />
             <h2 className={Styles.ProductCategory}>{productType}</h2>
             <div id="ProductListing" className={Styles.ProductListing}>
               {productData.allDatoCmsProduct.nodes.map(node => {

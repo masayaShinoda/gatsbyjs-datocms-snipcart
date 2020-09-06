@@ -23,7 +23,7 @@ body {
     font-size: 3.906rem;
   }
   h3 {
-    font-size: 3.125rem;
+    font-size: 2.734rem;
   }
   h2,
   h3,
@@ -36,6 +36,9 @@ body {
     font-family: $font-body;
     max-width: 75ch;
     font-size: 1.6rem;
+  }
+  a {
+    text-decoration: none;
   }
   button {
     background: none;

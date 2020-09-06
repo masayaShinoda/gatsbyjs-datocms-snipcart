@@ -4,6 +4,19 @@
 .Landing {
   margin-bottom: 2.5vmax;
   // border: 1px solid red; //debug
+  section {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      max-width: 75%;
+    }
+    a {
+      max-width: fit-content;
+      border-bottom: 5px dashed $primary-clr;
+    }
+  }
 }
 .each-slide {
   display: grid;
@@ -68,6 +81,7 @@
   .nav {
     //the previous and next arrows
     z-index: 5 !important; //override the default styling. makes it so that it does not overlap mobile navigation screen
+    background: none;
   }
 }
 

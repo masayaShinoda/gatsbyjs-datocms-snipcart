@@ -192,11 +192,6 @@
   grid-area: 1 / 1 / 2 / 3;
 }
 
-.productPageContainer .upperDiv a {
-  font-size: 2.5rem;
-  text-decoration: none;
-}
-
 .productPageContainer .productDetails {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
