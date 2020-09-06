@@ -65,6 +65,10 @@
     margin-top: 2.5vmax;
     // border: 1px solid green; //debug
   }
+  .nav {
+    //the previous and next arrows
+    z-index: 5 !important; //override the default styling. makes it so that it does not overlap mobile navigation screen
+  }
 }
 
 .each-slide span {

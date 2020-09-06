@@ -122,6 +122,9 @@
     margin: 0;
     margin-top: 2.5vmax;
   }
+  .nav {
+    z-index: 5 !important;
+  }
 }
 
 .each-slide span {
