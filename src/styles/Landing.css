@@ -83,6 +83,10 @@
   border-bottom: 5px dashed #3a2a8a;
 }
 
+.Landing section a:hover {
+  color: #533dc4;
+}
+
 .each-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,8 +123,17 @@
 .each-slide .slideDescriptionContainer {
   margin: 0 3.75vmax;
   margin-bottom: 2.5vmax;
-  max-width: 25vw;
+  max-width: 35vw;
   font-style: italic;
+}
+
+@media (max-width: 1023px) {
+  .each-slide .slideImageContainer img {
+    max-height: 35vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media (max-width: 480px) {

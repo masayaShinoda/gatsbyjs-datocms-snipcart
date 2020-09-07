@@ -15,6 +15,9 @@
       max-width: fit-content;
       border-bottom: 5px dashed $primary-clr;
     }
+    a:hover {
+      color: lighten($primary-clr, 15%);
+    }
   }
 }
 .each-slide {
@@ -42,8 +45,20 @@
   .slideDescriptionContainer {
     margin: 0 3.75vmax;
     margin-bottom: 2.5vmax;
-    max-width: 25vw;
+    max-width: 35vw;
     font-style: italic;
+  }
+}
+
+@media (max-width: $tablet-bp) {
+  .each-slide {
+    .slideImageContainer {
+      img {
+        max-height: 35vh;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 
