@@ -54,6 +54,10 @@
   color: #fcfcfc;
 }
 
+.parent.dark .Landing section a {
+  border-bottom: 5px dashed #7664d0;
+}
+
 .productContainer {
   -ms-flex-preferred-size: 17.5vmax;
       flex-basis: 17.5vmax;

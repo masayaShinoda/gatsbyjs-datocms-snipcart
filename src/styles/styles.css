@@ -51,6 +51,10 @@
   color: #fcfcfc;
 }
 
+.parent.dark .Landing section a {
+  border-bottom: 5px dashed #7664d0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -81,6 +85,10 @@ body h3 {
   font-size: 2.734rem;
 }
 
+body h4 {
+  font-size: 2.187rem;
+}
+
 body h2,
 body h3,
 body h4 {
@@ -91,7 +99,7 @@ body h4 {
 body p,
 body a {
   font-family: "Maven Pro", sans-serif;
-  max-width: 75ch;
+  max-width: 65ch;
   font-size: 1.6rem;
 }
 
@@ -114,6 +122,9 @@ body button {
   }
   body h3 {
     font-size: 2.734rem;
+  }
+  body h3 {
+    font-size: 2.187rem;
   }
   body p,
   body a {

@@ -18,14 +18,11 @@ const Slideshow = () => {
     <div className="slide-container">
       <Slide>
         <div className="each-slide">
-          <div
-            style={{
-              backgroundImage: `url(${slideImages[0]})`,
-            }}
-          >
+          <div className="slideImageContainer">
+            <img src={slideImages[0]}></img>
             <span>Slide 1</span>
           </div>
-          <div>
+          <div className="slideDescriptionContainer">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -35,13 +32,26 @@ const Slideshow = () => {
           </div>
         </div>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[1]})` }}>
+          <div className="slideImageContainer">
+            <img src={slideImages[1]}></img>
             <span>Slide 2</span>
           </div>
-          <div>
+          <div className="slideDescriptionContainer">
             <p>
               Aenean massa. Cum sociis natoque penatibus et magnis dis
               parturient montes, na
+            </p>
+          </div>
+        </div>
+        <div className="each-slide">
+          <div className="slideImageContainer">
+            <img src={slideImages[2]}></img>
+            <span>Slide 3</span>
+          </div>
+          <div className="slideDescriptionContainer">
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient penatibus et magnis dis parturient montes, na
             </p>
           </div>
         </div>
@@ -56,7 +66,7 @@ const Landing = props => {
       <section>
         <h1 style={{ marginBottom: `2.5vmax` }}>Welcome to {props.title}</h1>
         <Link to="/products">
-          <h3>
+          <h4>
             See what we have in store{" "}
             <FontAwesomeIcon
               size="1x"
@@ -66,7 +76,7 @@ const Landing = props => {
                 maxWidth: `2.5rem`,
               }}
             ></FontAwesomeIcon>
-          </h3>
+          </h4>
         </Link>
       </section>
       <Slideshow />

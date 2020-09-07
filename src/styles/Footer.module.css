@@ -51,6 +51,10 @@
   color: #fcfcfc;
 }
 
+.parent.dark .Landing section a {
+  border-bottom: 5px dashed #7664d0;
+}
+
 .Footer {
   max-width: 80vw;
   margin: 0 auto;

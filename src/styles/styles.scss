@@ -25,6 +25,9 @@ body {
   h3 {
     font-size: 2.734rem;
   }
+  h4 {
+    font-size: 2.187rem;
+  }
   h2,
   h3,
   h4 {
@@ -34,7 +37,7 @@ body {
   p,
   a {
     font-family: $font-body;
-    max-width: 75ch;
+    max-width: 65ch;
     font-size: 1.6rem;
   }
   a {
@@ -54,6 +57,9 @@ body {
     }
     h3 {
       font-size: 2.734rem;
+    }
+    h3 {
+      font-size: 2.187rem;
     }
     p,
     a {

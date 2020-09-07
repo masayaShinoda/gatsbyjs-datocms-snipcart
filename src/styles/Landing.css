@@ -51,12 +51,15 @@
   color: #fcfcfc;
 }
 
+.parent.dark .Landing section a {
+  border-bottom: 5px dashed #7664d0;
+}
+
 .Landing {
   margin-bottom: 2.5vmax;
 }
 
 .Landing section {
-  height: 45vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,75 +84,68 @@
 }
 
 .each-slide {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.each-slide > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 4.25vmax;
+}
+
+.each-slide .slideImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3.75vmax;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 65vh;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 
-.each-slide > div:nth-of-type(odd) {
-  margin-left: 5vw;
-  margin-top: 5vh;
+.each-slide .slideImageContainer img {
+  max-height: 65vh;
+  min-width: 35vw;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.each-slide > div:nth-of-type(even) {
-  margin-right: 5vw;
-  margin-top: 5vh;
+.each-slide .slideDescriptionContainer {
+  margin: 0 3.75vmax;
+  margin-bottom: 2.5vmax;
+  max-width: 25vw;
+  font-style: italic;
 }
 
 @media (max-width: 480px) {
   .each-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  .each-slide .slideImageContainer,
+  .each-slide .slideDescriptionContainer {
+    margin: 0;
+  }
+  .each-slide .slideImageContainer img {
+    max-height: 50vh;
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-  .each-slide > div {
-    width: 100%;
-    margin: 0;
-    max-width: 80%;
-    min-height: 0;
-  }
-  .each-slide > div:nth-of-type(odd) {
-    margin: 0;
-    min-height: 50vh;
-  }
-  .each-slide > div:nth-of-type(even) {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin: 0;
-    margin-top: 2.5vmax;
+  .each-slide .slideDescriptionContainer {
+    max-width: 95%;
+    margin-top: 1.25vmax;
   }
   .nav {
-    z-index: 5 !important;
-    background: none;
+    display: none !important;
   }
 }
 

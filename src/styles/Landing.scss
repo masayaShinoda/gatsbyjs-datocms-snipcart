@@ -5,7 +5,6 @@
   margin-bottom: 2.5vmax;
   // border: 1px solid red; //debug
   section {
-    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,69 +18,59 @@
   }
 }
 .each-slide {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  // border: 1px solid blue; //debug
-}
-
-.each-slide > div {
-  // grid-area: 1 / 1 / 2 / 2;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  margin-top: 4.25vmax;
 
-  min-height: 65vh;
+  // height: 65vh;
+  // border: 1px solid blue; //debug
+  .slideImageContainer {
+    // max-width: 35vw;
+    display: flex;
+    margin-left: 3.75vmax;
+    align-items: center;
+    justify-content: center;
+    max-height: fit-content;
+    img {
+      // border: 1px solid red; //debug
+      // box-shadow: -2.5vmin -4.25vmin 1px $primary-clr;
+      max-height: 65vh;
+      min-width: 35vw;
+      object-fit: contain;
+    }
+  }
+  .slideDescriptionContainer {
+    margin: 0 3.75vmax;
+    margin-bottom: 2.5vmax;
+    max-width: 25vw;
+    font-style: italic;
+  }
+}
 
-  // border: 1px solid red; //debug
-  // -webkit-box-shadow: -43px -23px 0px 3px $primary-clr;
-  // -moz-box-shadow: -43px -23px 0px 3px $primary-clr;
-  // box-shadow: -43px -23px 0px 3px $primary-clr;
-}
-.each-slide > div:nth-of-type(odd) {
-  margin-left: 5vw;
-  margin-top: 5vh;
-}
-.each-slide > div:nth-of-type(even) {
-  margin-right: 5vw;
-  margin-top: 5vh;
-}
 @media (max-width: $mobile-bp) {
   .each-slide {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    // border: 1px solid red; //debug
-  }
-  .each-slide > div {
-    width: 100%;
-
-    margin: 0;
-    // border: 1px solid red; //debug
-    max-width: 80%;
-    min-height: 0; //cancel min height set by desktop viewport
-  }
-  .each-slide > div:nth-of-type(odd) {
-    // border: 1px solid green; //debug
-    margin: 0; // cancel margin set by desktop viewport
-    min-height: 50vh;
-  }
-  .each-slide > div:nth-of-type(even) {
-    align-items: flex-start;
-    // border: 1px solid blue; //debug
-    margin: 0; // cancel margin set by desktop viewport
-    margin-top: 2.5vmax;
-    // border: 1px solid green; //debug
+    .slideImageContainer,
+    .slideDescriptionContainer {
+      margin: 0;
+    }
+    .slideImageContainer {
+      // border: 1px solid red; //debug
+      img {
+        max-height: 50vh;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .slideDescriptionContainer {
+      max-width: 95%;
+      margin-top: 1.25vmax;
+    }
   }
   .nav {
     //the previous and next arrows
-    z-index: 5 !important; //override the default styling. makes it so that it does not overlap mobile navigation screen
-    background: none;
+    // z-index: 5 !important; //override the default styling. makes it so that it does not overlap mobile navigation screen
+    display: none !important;
   }
 }
 

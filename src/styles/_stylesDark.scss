@@ -58,4 +58,12 @@ $tertiary-clr: $lightpurple;
   footer {
     color: #fcfcfc;
   }
+  .Landing {
+    //<Landing /> module from landing.js
+    section {
+      a {
+        border-bottom: 5px dashed $darkmode-primary-clr;
+      }
+    }
+  }
 }
