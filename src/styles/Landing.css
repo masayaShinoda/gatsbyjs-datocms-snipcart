@@ -70,10 +70,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 6.25vmax 0;
+  min-height: 35vh;
 }
 
 .Landing section h1 {
-  max-width: 75%;
+  max-width: 80%;
 }
 
 .Landing section a {
@@ -85,6 +87,12 @@
 
 .Landing section a:hover {
   color: #533dc4;
+}
+
+@media (max-width: 480px) {
+  .Landing section {
+    margin-bottom: 15vmax;
+  }
 }
 
 .each-slide {

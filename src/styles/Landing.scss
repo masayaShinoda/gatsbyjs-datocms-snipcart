@@ -8,8 +8,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 6.25vmax 0;
+    min-height: 35vh;
+    // border: 1px solid green; //debug
     h1 {
-      max-width: 75%;
+      max-width: 80%;
     }
     a {
       max-width: fit-content;
@@ -20,6 +23,16 @@
     }
   }
 }
+
+@media (max-width: $mobile-bp) {
+  .Landing {
+    section {
+      margin-bottom: 15vmax;
+      // border: 1px solid red; //debug
+    }
+  }
+}
+
 .each-slide {
   display: flex;
   align-items: center;
