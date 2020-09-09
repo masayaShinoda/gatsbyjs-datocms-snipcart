@@ -132,6 +132,25 @@ body button {
   }
 }
 
+@media (max-width: 480px) {
+  body h1 {
+    font-size: 3.25rem;
+  }
+  body h2 {
+    font-size: 2.5rem;
+  }
+  body h3 {
+    font-size: 2rem;
+  }
+  body h3 {
+    font-size: 1.6rem;
+  }
+  body p,
+  body a {
+    font-size: 1.25rem;
+  }
+}
+
 .parent {
   background: #f2f2f2;
   min-height: 100vh;
