@@ -93,13 +93,13 @@ body h2,
 body h3,
 body h4 {
   font-family: "Maven Pro", sans-serif;
-  max-width: 75ch;
+  max-width: 45ch;
 }
 
 body p,
 body a {
   font-family: "Maven Pro", sans-serif;
-  max-width: 65ch;
+  max-width: 60ch;
   font-size: 1.6rem;
 }
 

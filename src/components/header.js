@@ -22,8 +22,7 @@ class Header extends React.Component {
 
   goDark() {
     const parent = document.getElementById("parent")
-    const app = document.getElementById("logo")
-    app.src = logoDark
+
     parent.classList.add("dark")
     this.setState(() => {
       return {
@@ -33,6 +32,10 @@ class Header extends React.Component {
     console.log("go dark!")
     var mode = true
     localStorage.setItem("mode", JSON.stringify(mode))
+    document.getElementById("logo").src = logoDark
+
+    var logo = logoDark
+    localStorage.setItem("logo", JSON.stringify(logo))
   }
 
   goLight() {
@@ -49,14 +52,13 @@ class Header extends React.Component {
     console.log("go light!")
     var mode = false
     localStorage.setItem("mode", JSON.stringify(mode))
+    document.getElementById("logo").src = logoLight
+    var logo = logoLight
+    localStorage.setItem("logo", JSON.stringify(logo))
   }
 
   componentDidMount() {
-    // console.log(JSON.parse(localStorage.getItem("mode")))
     const storedData = JSON.parse(localStorage.getItem("mode"))
-    // console.log(
-    //   "the state of storeddata is " + JSON.stringify(this.state.darkMode)
-    // )
     this.setState(() => {
       return {
         darkMode: storedData,
@@ -66,9 +68,12 @@ class Header extends React.Component {
       const parent = document.getElementById("parent")
       parent.classList.add("dark")
     }
-    // console.log(
-    //   "the state of darkmode is " + JSON.stringify(this.state.darkMode)
-    // )
+
+    //check stored session to see if logo should be light or dark
+    const storedLogo = JSON.parse(localStorage.getItem("logo"))
+
+    const logoImg = document.getElementById("logo")
+    logoImg.src = storedLogo
   }
 
   render() {

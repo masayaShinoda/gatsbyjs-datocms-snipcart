@@ -59,7 +59,7 @@ const NavList = () => {
         </Link>
       </li>
       <li>
-        <Link to="/">
+        <Link to="/about">
           <FontAwesomeIcon
             size="1x"
             icon={faInfoCircle}
