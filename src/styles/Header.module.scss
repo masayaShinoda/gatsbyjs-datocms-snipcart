@@ -23,20 +23,26 @@
       justify-content: center;
       align-items: flex-end;
       .logo {
-        min-width: 4.25vmax;
-        width: 4.25vmax;
-        height: 4.25vmax;
-        max-width: 4.25vmax;
-        @media (max-width: $tablet-bp) {
-          min-width: 7.5vmax;
-          width: 7.5vmax;
-          height: 7.5vmax;
-          max-width: 7.5vmax;
+        // min-width: 4.25vmax;
+        // width: 4.25vmax;
+        // height: 4.25vmax;
+        max-width: 12.5vmax;
+        margin: 0;
+        // border: 1px solid red; //debug
+      }
+      @media (max-width: $tablet-bp) {
+        .logo {
+          // min-width: 7.5vmax;
+          // width: 7.5vmax;
+          // height: 7.5vmax;
+          max-width: 10vmax;
         }
-        @media (max-width: $mobile-bp) {
-          min-width: 8vmax;
-          width: 8vmax;
-          height: 8vmax;
+      }
+      @media (max-width: $mobile-bp) {
+        .logo {
+          // min-width: 8vmax;
+          // width: 8vmax;
+          // height: 8vmax;
           max-width: 8vmax;
         }
       }

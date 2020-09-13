@@ -3,6 +3,9 @@ import React from "react"
 import Nav from "./nav"
 import Styles from "../styles/Header.module.css"
 
+import logoLight from "../images/logo-03.png"
+import logoDark from "../images/logo-04.png"
+
 //font awesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMoon } from "@fortawesome/free-solid-svg-icons"
@@ -19,6 +22,8 @@ class Header extends React.Component {
 
   goDark() {
     const parent = document.getElementById("parent")
+    const app = document.getElementById("logo")
+    app.src = logoDark
     parent.classList.add("dark")
     this.setState(() => {
       return {
@@ -32,6 +37,9 @@ class Header extends React.Component {
 
   goLight() {
     const parent = document.getElementById("parent")
+    const app = document.getElementById("logo")
+    app.src = logoLight
+
     parent.classList.remove("dark")
     this.setState(() => {
       return {
@@ -69,8 +77,16 @@ class Header extends React.Component {
         <div className={Styles.headerContent}>
           <div className={Styles.logoContainer}>
             <Link to="/">
-              <p className={Styles.logoTitle}></p>
+              <img
+                className={Styles.logo}
+                id="logo"
+                src={logoLight}
+                alt="logo"
+              ></img>
             </Link>
+          </div>
+          <div style={{ display: `flex` }}>
+            <Nav />
             <button
               onClick={
                 this.state.darkMode === false ? this.goDark : this.goLight
@@ -88,7 +104,6 @@ class Header extends React.Component {
               />
             </button>
           </div>
-          <Nav />
         </div>
       </header>
     )

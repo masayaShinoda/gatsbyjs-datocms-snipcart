@@ -99,26 +99,18 @@
 }
 
 .Header .headerContent .logoContainer .logo {
-  min-width: 4.25vmax;
-  width: 4.25vmax;
-  height: 4.25vmax;
-  max-width: 4.25vmax;
+  max-width: 12.5vmax;
+  margin: 0;
 }
 
 @media (max-width: 1023px) {
   .Header .headerContent .logoContainer .logo {
-    min-width: 7.5vmax;
-    width: 7.5vmax;
-    height: 7.5vmax;
-    max-width: 7.5vmax;
+    max-width: 10vmax;
   }
 }
 
 @media (max-width: 480px) {
   .Header .headerContent .logoContainer .logo {
-    min-width: 8vmax;
-    width: 8vmax;
-    height: 8vmax;
     max-width: 8vmax;
   }
 }
