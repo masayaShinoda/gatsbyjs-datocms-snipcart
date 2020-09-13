@@ -17,6 +17,16 @@
     align-items: center;
     padding: 2.5vmin 0;
     width: 80vw;
+    .moon {
+    }
+    @media (max-width: $mobile-bp) {
+      .moon {
+        // border: 1px solid red; //debug
+        position: absolute;
+        right: 2.5vmax;
+        top: 4.25vmax;
+      }
+    }
     // border: 1px solid green; //debug
     .logoContainer {
       display: flex;
@@ -43,7 +53,7 @@
           // min-width: 8vmax;
           // width: 8vmax;
           // height: 8vmax;
-          max-width: 8vmax;
+          max-width: 10vmax;
         }
       }
     }

@@ -91,6 +91,7 @@ class Header extends React.Component {
               onClick={
                 this.state.darkMode === false ? this.goDark : this.goLight
               }
+              className={Styles.moon}
             >
               <FontAwesomeIcon
                 size="1x"
