@@ -10,10 +10,10 @@
 ## Features
 * Product inventory is managed using the [DatoCMS](https://www.datocms.com/) dashboard
 * Fully responsive minimalistic design
-* And last but not least, dark mode!
+* And last but not least, dark mode :first_quarter_moon_with_face:!
 
 ## Setting up
-I will walk you through how to make this site yours. The code is messy but you'll have your own online store in no time!
+I will walk you through how to make this site yours. You'll have your own online store in no time!
 
 `gatsby new gatsby-simplefolio https://github.com/masayaShinoda/gatsbyjs-datocms-snipcart`
 
