@@ -58,6 +58,7 @@
 .Footer {
   max-width: 80vw;
   margin: 0 auto;
+  padding: 2.5vh 0;
 }
 
 @media (max-width: 480px) {
