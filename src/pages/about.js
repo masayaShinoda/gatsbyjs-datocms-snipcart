@@ -24,7 +24,8 @@ const AboutPage = () => {
         <p>
           Glad you gave this starter a try! Any suggestions or constructive
           criticism regarding the code are welcome! If there are issues
-          encountered, please notify me on Github and help as best I can.
+          encountered, please notify me on Github and I will help as best as I
+          can.
         </p>
         <p>
           Please refer to the documentation for information on how to modify the

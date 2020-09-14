@@ -48,11 +48,11 @@ const Products = () => {
 
   return (
     <>
+      <BackButton destination="/" />
       {sortedProductTypes.map(productType => {
         //return a product category for each product type that has been sorted
         return (
           <>
-            <BackButton destination="/" />
             <h2 className={Styles.ProductCategory}>{productType}</h2>
             <div id="ProductListing" className={Styles.ProductListing}>
               {productData.allDatoCmsProduct.nodes.map(node => {
