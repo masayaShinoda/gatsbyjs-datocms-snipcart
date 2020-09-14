@@ -19,12 +19,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Masaya Store`,
-        short_name: `starter`,
+        short_name: `Masaya Store`,
         start_url: `/`,
-        background_color: `#3A2A8A`,
-        theme_color: `#3A2A8A`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#3a2a8a`,
+        theme_color: `#3a2a8a`,
+        display: `Masaya Store`,
+        icon: `src/images/logo-03.png`, // This path is relative to the root of the site.
       },
     },
     {
