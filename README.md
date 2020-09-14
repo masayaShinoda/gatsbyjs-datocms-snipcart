@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://masayastore.netlify.app">
-    <img alt="Store Logo" src="https://masayastore.netlify.app/static/logo-03-ddcb0a0dcba9574b7ccdce8950548bbb.png" width="60" />
+    <img alt="Store Logo" src="https://masayastore.netlify.app/static/logo-03-ddcb0a0dcba9574b7ccdce8950548bbb.png" width="100" />
   </a>
 </p>
 <h1 align="center">
