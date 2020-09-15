@@ -88,7 +88,7 @@ I will walk you through how to make this site yours. You'll have your own online
     query productData {
       allDatoCmsProduct {
         nodes {
-          //YOUR FIELDS
+          // YOUR FIELDS
         }
       }
     }
