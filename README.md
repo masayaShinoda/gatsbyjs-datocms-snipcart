@@ -43,3 +43,5 @@ I will walk you through how to make this site yours. You'll have your own online
       },
     },
     ```
+  3. Accessing DatoCMS data
+    * Follow the official DatoCMS [Documentation](https://www.datocms.com/docs/gatsby) for use with GatsbyJS
