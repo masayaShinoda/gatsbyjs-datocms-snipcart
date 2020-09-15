@@ -83,7 +83,7 @@ I will walk you through how to make this site yours. You'll have your own online
         }
       `)
       ```
-5. While in development mode, navigate to `localhost:8000/_graphql` to see your personal DatoCMS nodes. In my case, my DatoCMS `Model` is `Product` and the fields can be queried by :
+5. While in development mode, navigate to `localhost:8000/_graphql` to see your personal DatoCMS nodes. In my case, my DatoCMS `Model` is `Product` and the fields can be queried by:
     ```
     query productData {
       allDatoCmsProduct {
