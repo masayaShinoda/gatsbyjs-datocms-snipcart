@@ -7,6 +7,8 @@
   GatsbyJS + DatoCMS + Snipcart Starter
 </h1>
 
+** README IS IN PROGRESS **
+
 ## Features
 * Product inventory is managed using the [DatoCMS](https://www.datocms.com/) dashboard
 * Fully responsive minimalistic design
