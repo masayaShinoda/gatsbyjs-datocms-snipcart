@@ -88,20 +88,7 @@ I will walk you through how to make this site yours. You'll have your own online
     query productData {
       allDatoCmsProduct {
         nodes {
-          productType
-          productModel
-          brand
-          colorS
-          sizes
-          price
-          displayimg {
-            url
-          }
-          images {
-            url
-            alt
-          }
-          id
+          //YOUR FIELDS
         }
       }
     }
