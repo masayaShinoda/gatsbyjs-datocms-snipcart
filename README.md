@@ -57,3 +57,29 @@ I will walk you through how to make this site yours. You'll have your own online
     },
     ```
     —you would want to query and render your own content (in this case, products) instead of mine.
+  4. Here's how the product listing works in this website:
+    * Products are queried using GraphQL's `useStaticQuery` found on line 10 in `.\src\components\products.js`:
+      ```
+      const productData = useStaticQuery(graphql`
+        query productData {
+          allDatoCmsProduct {
+            nodes {
+              productType
+              productModel
+              brand
+              colorS
+              sizes
+              price
+              displayimg {
+                url
+              }
+              images {
+                url
+                alt
+              }
+              id
+            }
+          }
+        }
+      `)
+      ```
