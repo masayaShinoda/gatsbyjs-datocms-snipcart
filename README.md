@@ -44,4 +44,16 @@ I will walk you through how to make this site yours. You'll have your own online
     },
     ```
 3. Accessing DatoCMS data:
-  * Follow the official DatoCMS [Documentation](https://www.datocms.com/docs/gatsby) for use with GatsbyJS
+  * Follow the official DatoCMS [Documentation](https://www.datocms.com/docs/gatsby) for how to integrate with GatsbyJS
+  * Once you've changed the API Token in `gatsby-config.js`—
+    ```
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: `YOUR API TOKEN`,
+        preview: false,
+        disableLiveReload: false,
+      },
+    },
+    ```
+    —you would want to query your own content instead of mine.
