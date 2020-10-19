@@ -7,6 +7,8 @@
   GatsbyJS + DatoCMS + Snipcart Starter
 </h1>
 
+[Demo](https://masayastore.netlify.app)
+
 **README IS IN PROGRESS**
 
 ## Who is this guide aimed for?
