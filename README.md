@@ -9,6 +9,9 @@
 
 **README IS IN PROGRESS**
 
+## Who is this guide aimed for?
+* If you're comfortable with creating HTML/CSS/JS static webpages and is currently learning ReactJS. I hope you appreciate what GatsbyJS is capable of after reading.
+
 ## Features
 * Product inventory is managed using the [DatoCMS](https://www.datocms.com/) dashboard
 * Fully responsive minimalistic design
